@@ -1,0 +1,131 @@
+
+.ecoworld_logo_menu_header { background:#fff; }
+
+.ecoworld_main_container { background:#fff; }
+
+/* dropdown hover ------------------------------------ */
+
+ul.ecoworld_top_nav li li { border-top:1px solid rgba(0,0,0,0.07); background:rgba(0,0,0,0.07); }
+
+ul.ecoworld_top_nav li.ecoworld-mega-menu > ul > li { border-left:1px solid rgba(0,0,0,0.08);}
+
+/* Blog Post ============================================================================ */
+
+
+#comments li.comment article.comment_body {  background:rgba(0,0,0,0.03); }
+
+ul.ecoworld_post_share_icons_list li { background:transparent; border:1px solid rgba(0,0,0,0.15); }
+ul.ecoworld_post_share_icons_list li a { color:#888; }
+ul.ecoworld_post_share_icons_list li a:hover { color:#fff; border-color:rgba(0,0,0,0.05); }
+ul.ecoworld_post_share_icons_list li.s_twitter:hover { background: #12c4f7; }
+ul.ecoworld_post_share_icons_list li.s_facebook:hover { background: #3984bd; }
+ul.ecoworld_post_share_icons_list li.s_google:hover { background: #e65f3d; }
+ul.ecoworld_post_share_icons_list li.s_pinterest:hover { background: #cd2127; }
+ul.ecoworld_post_share_icons_list li.s_linkedin:hover { background: #0097bf; }
+ul.ecoworld_post_share_icons_list li.s_tumblr:hover { background: #e55e42; }
+
+/* Pagination ============================================================================ */
+.ecoworld_pagination a,.ecoworld_pagination .page-numbers.current { background:rgba(0,0,0,0.02); border:1px solid rgba(0,0,0,0.1); }
+.ecoworld_pagination a.prev.page-numbers,.ecoworld_pagination a.next.page-numbers { border:1px solid rgba(0,0,0,0.1); }
+#comments .ecoworld-paginate-com a,#comments .ecoworld-paginate-com span, .ecoworld_pagination_menu > a,.ecoworld_pagination_menu > span { border:1px solid rgba(0,0,0,0.1); }
+.ecoworld_container .ecoworld_next_prev_pagination a,.ecoworld_next_prev_pagination a { background:rgba(0,0,0,0.02); border:1px solid rgba(0,0,0,0.1); }
+.ecoworld_infiniteScroll_loader { background: url("../images/loader-infinite3.gif") center center no-repeat; background-color:#fff; }
+.ecoworld_container .ecoworld_next_prev_pagination a,.ecoworld_next_prev_pagination a { color:#888;}
+
+/* Archives ============================================================================ */
+.ecoworld_container .ecoworld_archives_content ul { border:1px solid #e6e6e6; }
+.ecoworld_container .ecoworld_archives_content ul li { border-top: 1px solid #e6e6e6;  }
+.ecoworld_container .ecoworld_archives_content ul li span.archive_page_date { border-right:1px dotted #ddd; }
+
+/* Search Page ============================================================================ */
+ul.ecoworld_search_list > li {border: 1px solid #e6e6e6; }
+
+/* Archive Page ============================================================================ */
+.ecoworld_container .ecoworld_archives_content ul { border:1px solid #e6e6e6; }
+.ecoworld_container .ecoworld_archives_content ul li { border-top: 1px solid #e6e6e6;  }
+.ecoworld_container .ecoworld_archives_content ul li span.archive_page_date { border-right:1px dotted #ddd; }
+
+/* Events Page ============================================================================ */
+
+.ecoworld_event_list_datebox .ecoworld_event_list_date_icon, #tribe-events-content .tribe-events-tooltip h4, .tribe-events-notices { background:#fff; }
+
+.ecoworld_te_single_meta ul li span.event_bar_icon,.ecoworld_single_box_title_icon { border:2px solid #fff; }
+.tribe-events-notices { border-color:#e6e6e6; }
+.ecoworld_event_list_datebox .ecoworld_event_list_date_icon { border:2px solid #dfdfdf; }
+
+h3.tribe-events-month-event-title a { color:#555; }
+ol.hfeed.vcalendar li { border-bottom: 1px solid #e6e6e6; }
+ol.hfeed.vcalendar li span,.ecoworld_event_list_date .ecoworld_e_l_month { color:#888; }
+.tribe-events-list .tribe-events-photo-event .tribe-events-event-details { border:1px solid #e6e6e6; }
+.tribe-events-list #tribe-events-photo-events .updated.published.time-details { color:#999; }
+
+.ecoworld_event_list_summery ul { border:2px solid #f0f0f0; }
+.ecoworld_event_list_summery ul li { border-bottom:1px solid #f2f2f2; }
+.ecoworld_event_list_datebox { background:#f4f4f4; }
+.ecoworld_event_list_datebox_inner { border:2px solid #dfdfdf; background:#fff; }
+
+.ecoworld_event_list_datebox .ecoworld_event_list_date_icon { background: #fff; border:2px solid #dfdfdf; }
+
+.ecoworld_event_list_readmore_arrow { border:2px solid #e6e6e6; }
+.ecoworld_event_list_readmore_arrow a { background:#fff; }
+
+ul.tribe-events-sub-nav li a { background: #fff; color:#666; border:2px solid rgba(0,0,0,0.1); }
+#tribe-events-content .tribe-events-calendar td { border-color:#ddd; }
+.tribe-events-calendar thead th { border-color: rgba(255,255,255,0.1);}
+
+.tribe-events-calendar td.tribe-events-past div[id*=tribe-events-daynum-],.tribe-events-calendar td.tribe-events-past div[id*=tribe-events-daynum-]>a,.tribe-events-calendar div[id*=tribe-events-daynum-], .tribe-events-calendar div[id*=tribe-events-daynum-] a { background:#f2f2f2; color:#666; }
+
+#tribe-events-content .tribe-events-calendar td { border-color:#e6e6e6; }
+
+/*#tribe-bar-form .tribe-bar-filters .tribe-bar-submit input[type=submit] { border:1px solid rgba(0,0,0,0.04); }
+#tribe-bar-form .tribe-bar-filters input[type="text"],.tribe-bar-disabled #tribe-bar-form .tribe-bar-filters input[type="text"] { border:1px solid #e1e1e1; background: #fff; }
+.tribe-bar-collapse #tribe-bar-collapse-toggle { border-bottom: 1px solid #e6e6e6; background:#fff; }
+.tribe-bar-filters-inner { background: #f2f2f2; border-bottom: 1px solid rgba(0,0,0,0.08); }
+#tribe-bar-form.tribe-bar-collapse {  background: #f2f2f2; border-bottom: 1px solid #e6e6e6; }
+#tribe-bar-form.tribe-bar-collapse .tribe-bar-filters-inner { border-top: 1px solid #e6e6e6; }*/
+
+.ecoworld_te_single_meta:after { background:#e6e6e6; }
+.ecoworld_te_single_meta ul { border:2px solid #e6e6e6; background:#f3f3f3; }
+
+.ecoworld_te_single_title_meta_section span.ecoworld_te_single_title_cost { background: #ccc; }
+
+.ecoworld_single_box_title { background:#f3f3f3; border-color:#e6e6e6; }
+
+.tribe-events-grid .tribe-grid-header .tribe-grid-content-wrap .column { border-color: rgba(255,255,255,0.1); }
+.te_venue_map_title { border:1px solid #e6e6e6; }
+.tribe-events-tooltip .tribe-events-event-body .tribe-event-duration { border-bottom: 1px solid #e6e6e6; }
+
+
+@media only screen and (max-width: 767px) { 
+	.ecoworld_te_single_meta_table table.ecoworld_te_single_do_table tr td { border:1px solid #e1e1e1; }
+	.tribe-events-sub-nav li a:hover, .tribe-events-sub-nav li a:visited { background:#fff; color:#666;  }
+	.tribe-events-event-schedule-details { border-bottom:1px solid #e6e6e6; }
+	.tribe-mobile-day { border:1px solid #e6e6e6; }
+	.tribe-events-calendar td.tribe-events-past div[id*=tribe-events-daynum-],.tribe-events-calendar td.tribe-events-past div[id*=tribe-events-daynum-]>a,.tribe-events-calendar div[id*=tribe-events-daynum-], .tribe-events-calendar div[id*=tribe-events-daynum-] a { background:transparent; }
+	
+}
+
+
+/*Global ============================================================================ */
+abbr,acronym { border-bottom: 1px dotted #ccc;  }
+th,td { border-color:#e1e1e1; }
+table thead  { background: rgba(0,0,0,0.05); }
+blockquote { color:#555; }
+input[type="search"],input, textarea, select,.woocommerce input,.woocommerce select,.woocommerce textarea { border: 1px solid #e6e6e6; }
+input[type="text"]:focus, input[type="password"]:focus,	input[type="email"]:focus, input[type="number"]:focus, input[type="url"]:focus, input[type="tel"]:focus, input[type="search"]:focus, textarea:focus { box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2); color: #555;	}
+label span, legend span { color: #444; }
+@media print {    
+    * { color: #000 !important; } 
+    pre, blockquote { border: 1px solid #999; }
+}
+.border { border:1px solid rgba(0,0,0,.1); }
+.image_border { border:1px solid #ececec; }
+
+pre { 
+	border:1px solid #e1e1e1; 
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, .05) 50%, transparent 50%, transparent);
+	background-image: -moz-linear-gradient(rgba(0, 0, 0, .05) 50%, transparent 50%, transparent);
+	background-image: -ms-linear-gradient(rgba(0, 0, 0, .05) 50%, transparent 50%, transparent);
+	background-image: -o-linear-gradient(rgba(0, 0, 0, .05) 50%, transparent 50%, transparent);
+	background-image: linear-gradient(rgba(0, 0, 0, .05) 50%, transparent 50%, transparent);
+}

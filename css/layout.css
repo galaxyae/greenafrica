@@ -1,0 +1,1089 @@
+/*
+
+[Table of contents]
+
+	1. General
+	2. List Style
+	3. Top Bar
+	4. Header / Menu
+		4.1 Logo
+		4.2 Dropdown
+		4.3 Item Space
+		4.4 Mega menu
+		4.5 Arrow after before
+		4.6 Mobile menu
+		4.7 Sticky Header
+		4.8 Search Icon Section
+	5. Sub Header
+		5.1 Breadcrumbs
+		5.2 Z-indexs
+		5.3 Google map - Revolution slider
+	6. Sidebar
+	7. Footer
+		7.1 Widget Footer
+		7.2 Small Footer
+	8. Blog
+		8.1 Title section, icon
+		8.2 Meta
+		8.3 Quote
+		8.4 Blog Style Grid
+		8.5 Grid image hover
+		8.6 Tile Gallery
+		8.7 Post Single Styles
+		8.8 About author
+		8.9 Related Posts
+		8.10 Comments
+		8.11 Comment Form
+		8.12 Post Single Next Prev Pagination
+	9. Pagination
+	10. Search Page
+	11. Archives Page
+	12. Causes Page
+		12.1 Causes Single Page
+	13. Portfolio Page
+	14. Testimonials
+	15. Blank Page
+	16. WordPress Default Widgets Styles
+		16.1 RSS
+		16.2 Text
+		16.3 Tag Colud
+		16.4 Calendar Widget
+		16.5 Search Widget
+		16.6 Recent Comments
+		16.7 Captions
+
+*/
+
+/* ---------------------------------------------- 
+ 	1. General
+---------------------------------------------- */
+
+.ecoworld_l_boxed { margin:0 auto; overflow: visible; }
+
+#ecoworld_main_container { width:100%; position: relative; z-index: 2; }
+.ecoworld_site_content { /*overflow: hidden;*/ }
+.ecoworld_container { position: relative; margin:0 auto; }
+.ecoworld_main_container_wrap { margin:0 auto; }
+
+.ecoworld_main_container { display:block; margin:0 auto; width:auto; position: relative;  }
+
+.ecoworld_site_content a { text-decoration: none; }
+
+.ecoworld_site_loader { width:100%; height:100%; position: fixed; z-index:99; background:#ffffff; }
+.ecoworld_loader_holder { position: absolute; top:50%; left:50%; display: block; width:60px; height:60px; margin-top:-30px; margin-left: -30px; }
+
+.ecoworld_loader { position:relative; }
+.ecoworld_loader span { position:absolute; border: 6px solid #000; border-top: 6px solid transparent; border-radius:999px; }
+.ecoworld_loader span:nth-child(1){ width:60px; height:60px; animation: spin-1 2s infinite linear; }
+.ecoworld_loader span:nth-child(2){ top: 15px; left: 15px; width:30px; height:30px; animation: spin-2 1s infinite linear; }
+
+@keyframes spin-1 {0% {transform: rotate(360deg); opacity: 1;} 50% {transform: rotate(180deg); opacity: 0.5;} 100% {transform: rotate(0deg); opacity: 1;} } 
+@keyframes spin-2 {0% {transform: rotate(0deg); opacity: 0.5;} 50% {transform: rotate(180deg); opacity: 1;} 100% {transform: rotate(360deg); opacity: 0.5;} }
+
+/* ---------------------------------------------- 
+ 	2. List Styles
+---------------------------------------------- */
+
+.ecoworld_container ul { list-style: disc outside none; }
+.ecoworld_container li { margin-left: 1em; padding: 3px 0px; }
+
+.sidebar ul,.footer ul { list-style: none; margin: 0; }
+.sidebar ul li { margin:0; padding: 3px 0px; display: block; line-height: normal; }
+
+/* ---------------------------------------------- 
+ 	3. Top Bar
+---------------------------------------------- */
+
+body.ecoworld_l_boxed .ecoworld_topbar_main_container { overflow: hidden; }
+
+.ecoworld_topbar { display: block; position: relative; padding:4px 0 8px 0; line-height: 30px; }
+.ecoworld_topbar a { text-decoration: none; }
+.ecoworld_topbar ul { margin:0; float:left; }
+
+.ecoworld_topbar_content ul li { display: inline-block; list-style: none; margin-left: 15px; }
+.ecoworld_topbar_content ul li i { margin-right: 5px; }
+.ecoworld_topbar_content ul li:first-child { margin-left: 0; }
+
+.ecoworld_topbar_content ul.ecoworld_topbar_socials { float:left; margin:7px 0 0 12px;  }
+.ecoworld_topbar_content ul.ecoworld_topbar_socials li { display: inline-block; float:left; list-style: none; margin:0 0 5px 5px; height:22px; width:22px; padding:0; line-height: 20px; text-align: center;  border-radius: 50%; background:rgba(255,255,255,0.1);  }
+
+.ecoworld_topbar_content ul.ecoworld_topbar_socials li:hover { background:rgba(0,0,0,0.2); }
+
+.ecoworld_topbar_content ul.ecoworld_topbar_socials li a { height:22px; width:22px; display:block; }
+.ecoworld_topbar_content ul.ecoworld_topbar_socials li i { margin:0; font-size: 12px; }
+
+/* ---------------------------------------------- 
+ 	4. Header / Menu
+---------------------------------------------- */
+
+body.ecoworld_l_boxed .ecoworld_header_main_container { /*overflow: hidden;*/ }
+
+.ecoworld_topnav_border { display: block; width:100%; height:4px; position: absolute; top:-4px; left:0;  }
+
+ul.ecoworld-menu-setting-msg { float:left; padding:0; margin:0; line-height: 93px; padding-left:20px; color:#fff;  }
+ul.ecoworld-menu-setting-msg li { list-style: none; font-size: 90%; padding:0; margin:0; }
+
+.ecoworld_header_container { position: relative; }
+
+.ecoworld_logo_menu_header { position: relative; display: block; width:100%; }
+#ecoworld_Header:not(.sticky-on) .ecoworld_logo_menu_header,.ecoworld_woo_cart_hover_menu { -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.1); -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,.1); box-shadow: 0 2px 5px 0 rgba(0,0,0,.1); }
+
+.ecoworld_no_boxed.ecoworld_fw_header #ecoworld_header .ecoworld_container,
+.ecoworld_no_boxed.ecoworld_fw_header #ecoworld_topbar .ecoworld_container { width:98%; max-width: none; }
+
+.ecoworld_header { display: block; position: relative; }
+.ecoworld_nav,.subHeaderOff .ecoworld_header,
+.subHeaderOff .ecoworld_logo_menu_header { position: relative; }
+.subHeaderOff #ecoworld_Header { -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.1); -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,.1); box-shadow: 0 2px 5px 0 rgba(0,0,0,.1); }
+
+/* 4.1 Logo and Menu ---------------------------------------------- */
+
+.ecoworld_logo { position: relative; float:left; padding-right: 35px;  }
+.ecoworld_logo { background:#fff;  }
+
+.ecoworld_main_nav { display: block; position: relative; }
+
+nav.ecoworld-top-menu { float:left; }
+ul.ecoworld_top_nav { padding:0 0 0 36px; margin:0; float:left; z-index: 5; border-left:1px solid #f2f2f2; }
+ul.ecoworld_top_nav > li { display: inline-block; margin:0; float:left; padding:0;  text-align: left; }
+ul.ecoworld_top_nav > li > a { text-decoration: none; padding:0; position: relative;display: block; margin:0; }
+ul.ecoworld_top_nav > li > a > span { display: block; position: relative; clear:both; padding:0; }
+ul.ecoworld_top_nav > li.ecoworld_m_active > a > span:after { content:''; width:100%; height:3px; display: block; left:0; bottom:-3px; position: absolute; }
+
+ul.ecoworld_top_nav > li a i { margin-right: 5px; }
+
+ul.ecoworld_top_nav li { position: relative; list-style: none; }
+ul.ecoworld_top_nav li a { text-decoration: none; }
+
+ul.ecoworld_top_nav > li > a { margin:0; padding:0 36px 0 0; }
+ul.ecoworld_top_nav > li > a > span { padding:0 0 0 0; }
+
+ul.ecoworld_top_nav > li:first-child > a > span > i.fa-home { display: inline-block; width:33px; height:33px; font-size: 16px; line-height: 33px; text-align: center; border-radius: 50%; margin-right:-10px; }
+
+.ecoworld_header_donate_btn { margin-left: 9px; float:right; font-size: 90%; }
+.ecoworld_header_donate_btn a { display: inline-block; width:auto; height:33px; padding:0 25px; border-radius: 30px; text-decoration: none; line-height: 33px; }
+
+/* 4.2 Dropdown ---------------------------------------------- */
+
+ul.ecoworld_top_nav li ul { position: absolute; width:200px; top:0; left:0; padding:0; margin:0; line-height: 20px; visibility: hidden; opacity: 0; display: none; z-index: 6; box-shadow:0px 0px 15px rgba(0, 0, 0, 0.08); margin-left:0px; }
+ul.ecoworld_top_nav li.ecoworld_menu_hover > ul { visibility: visible; }
+ul.ecoworld_top_nav li ul ul { left:100%; margin-left: 0px; margin-top:0; }
+
+ul.ecoworld_top_nav li:hover > ul { -moz-transition: opacity .3s ease-in-out; -webkit-transition: opacity .3s ease-in-out; transition: opacity .3s ease-in-out; }
+ul.ecoworld_top_nav li:hover > ul { opacity: 1; visibility: visible; display: table; }
+ul.ecoworld_top_nav li:hover { visibility: inherit; }
+
+ul.ecoworld_top_nav li ul,
+ul.ecoworld_top_nav li.ecoworld-mega-menu > ul { display: table; }
+ul.ecoworld_top_nav li.ecoworld-mega-menu > ul > li { display: table-cell; }
+
+ul.ecoworld_top_nav li:not(.ecoworld-mega-menu) > ul li { }
+ul.ecoworld_top_nav li ul li a span { padding:8px 22px; margin:0; display: block;  text-decoration: none; }
+ul.ecoworld_top_nav li ul li:first-child a span,
+ul.ecoworld_top_nav li ul li li:first-child a span { border-top:0; }
+ul.ecoworld_top_nav > li > ul li { float:left; width:100%; }
+ul.ecoworld_top_nav li > ul { top:100%; padding:15px 0; }
+
+ul.ecoworld_top_nav li li { padding: 0; margin:0; position: relative; }
+ul.ecoworld_top_nav li li ul { top:auto; top:0; position: absolute; }
+
+ul.ecoworld_top_nav > li:last-child:not(.ecoworld-mega-menu) ul ul { left:auto; right:100%; margin-left: 0px; }
+ul.ecoworld_top_nav > li > ul,ul.ecoworld_top_nav > li.ecoworld-mega-menu > ul { border:0; border-top:0px solid; }
+ul.ecoworld_top_nav li ul { padding:0px; display: block; margin-top:0; }
+ul.ecoworld_top_nav li ul ul { margin-top: -3px;}
+ul.ecoworld_top_nav li li:first-child { border-top:0; }
+ul.ecoworld_top_nav li ul li:hover > a > span { padding-left: 30px; }
+
+/* 4.3 Item Space ---------------------------------------------- */
+
+ul.ecoworld_top_nav > li:not(.ecoworld-mega-menu) > ul li { padding-top:5px; padding-bottom:5px; }
+ul.ecoworld_top_nav > li.ecoworld-mega-menu ul li { padding-top:5px; padding-bottom:5px; }
+
+/* 4.4 Mega Menu ---------------------------------------------- */
+
+ul.ecoworld_top_nav li.ecoworld-mega-menu { position: inherit; text-align: left; }
+ul.ecoworld_top_nav li.ecoworld-mega-menu > ul { padding:0; position: absolute !important; margin:0; width:100%; top:100%; }
+ul.ecoworld_top_nav li.ecoworld-mega-menu ul li { border:0; }
+ul.ecoworld_top_nav li.ecoworld-mega-menu > ul li li:hover a { padding-left: 5px; }
+ul.ecoworld_top_nav li.ecoworld-mega-menu > ul li li a { padding-left:0; }
+ul.ecoworld_top_nav li.ecoworld-mega-menu > ul > li > a:first-child span { padding-top: 25px; }
+ul.ecoworld_top_nav li.ecoworld-mega-menu > ul > li > ul > li:last-child { margin-bottom: 25px; }
+ul.ecoworld_top_nav li.ecoworld-mega-menu > ul > li > ul > li { padding-right: 5px; }
+
+ul.ecoworld_top_nav li.ecoworld-mega-menu > ul > li { margin: 0; float: left!important; display: block !important; width:25%; padding:5px 1% 0 1%; }
+ul.ecoworld_top_nav li.ecoworld-mega-menu ul li a { padding:0; border:0; display: block; }
+ul.ecoworld_top_nav li.ecoworld-mega-menu ul li a span { border:0;padding-left: 20px; padding:6px 0; }
+ul.ecoworld_top_nav li.ecoworld-mega-menu > ul > li > a:first-child span { margin-bottom: 8px; padding-left: 20px; cursor: default; }
+ul.ecoworld_top_nav li.ecoworld-mega-menu > ul > li:first-child {  border:0;  }
+ul.ecoworld_top_nav li.ecoworld-mega-menu.no-title > ul > li > a { display: none; }
+
+ul.ecoworld_top_nav li.ecoworld-mega-menu li > ul { padding: 0 0 0 20px; margin:0; border:none; left: auto; top: auto; position: relative; visibility: visible; opacity: 1; display: none; padding-left: 20px; width:100%; float:none; }
+ul.ecoworld_top_nav li.ecoworld-mega-menu:hover li ul { opacity: 1 !important; visibility: visible !important; display: block; }
+ul.ecoworld_top_nav li.ecoworld-mega-menu .sub-menu li:hover { background:none; }
+
+ul.ecoworld_top_nav li ul,ul.ecoworld_top_nav li.ecoworld-mega-menu > ul { border-top:3px solid; }
+
+/* 4.5 Arrow After Before ---------------------------------------------- */
+
+ul.ecoworld_top_nav li.ecoworld-mega-menu .menu-item-has-children > a:first-child:after { display: none; }
+ul.ecoworld_top_nav li.ecoworld-mega-menu > ul li > a span,
+ul.ecoworld_top_nav li.ecoworld-mega-menu > ul li > a { position:relative; }
+ul.ecoworld_top_nav li.ecoworld-mega-menu > ul li > a:before {  content:''; position:absolute; left:0; top:0; width:100%; height:100%; padding:5px; display:block; z-index:0; margin-left:-7px; border-radius:2px;}
+ul.ecoworld_top_nav li.ecoworld-mega-menu > ul li:hover > a:before { }
+ul.ecoworld_top_nav li.ecoworld-mega-menu > ul > li > a:first-child:before { display:none; }
+
+/* 4.6 Mobie Menu ---------------------------------------------- */
+
+#ecoworld_mobi_nav ul.ecoworld_top_nav { display: none; z-index: 999999; }
+
+#ecoworld_mobi_nav #ecoworld_mobi_nav_btn { font-size: 16px; text-align: center; display: inline-block; cursor: pointer; font-family: "Font Awesome"; line-height: 37px; top:50%;  right:0; float:right; width:36px; height:36px; } 
+
+#ecoworld_mobi_nav { width:auto; position: absolute; top:50%; right:0; margin-top: -18px; display: none; } 
+#ecoworld_mobi_nav a { text-decoration: none; }
+#ecoworld_mobi_nav > ul { position: absolute; right:0; top: 36px; overflow: hidden; border:1px solid rgba(0,0,0,0.1); }
+#ecoworld_mobi_nav ul,#ecoworld_mobi_nav ul li {width: 250px; display: block; margin:0; padding:0;}
+#ecoworld_mobi_nav ul { display: none; text-align: left;  }
+
+#ecoworld_mobi_nav ul li { border-bottom:1px solid rgba(0,0,0,0.1);  }
+#ecoworld_mobi_nav ul li:last-child { border:0; }
+#ecoworld_mobi_nav ul li ul li span { padding-left: 15px; }
+#ecoworld_mobi_nav ul li ul li:first-child { border-top:1px solid rgba(0,0,0,0.1); }
+#ecoworld_mobi_nav ul li i { margin-right: 5px; }
+#ecoworld_mobi_nav > ul > li > a {padding: 12px 15px; } 
+#ecoworld_mobi_nav > ul > li > a > span { padding-left: 8px; }
+#ecoworld_mobi_nav ul li a {width: 100%; border-bottom: 0; padding: 12px; line-height: 20px; display: block; } 
+
+#ecoworld_mobi_nav ul ul li a {padding-left: 25px; } 
+#ecoworld_mobi_nav ul ul ul li a {padding-left: 35px; } 
+#ecoworld_mobi_nav ul ul ul ul li a {padding-left: 45px; }
+#ecoworld_mobi_nav ul ul ul ul ul li a {padding-left: 55px; }
+#ecoworld_mobi_nav ul ul ul ul ul ul li a {padding-left: 65px; }
+
+#ecoworld_mobi_nav  ul li.ecoworld-has-sub-menu > a {padding-right: 45px; }
+
+#ecoworld_mobi_nav .ecoworld-mini-menu-arrow {position: absolute; right: 0; top: 0; display: block;  height: 44px; width: 44px; cursor: pointer; font-family: "Font Awesome"; text-align: center; line-height: 44px; } 
+#ecoworld_mobi_nav .ecoworld-mini-menu-arrow i { line-height: 44px; font-size: 14px; }
+#ecoworld_mobi_nav ul li ul li .ecoworld-mini-menu-arrow { padding-left:5px; }
+
+#ecoworld_mobi_nav ul.ecoworld-nav-cat-posts li a { padding-left: 12px; }
+#ecoworld_mobi_nav ul.ecoworld-nav-cat-posts li a.ecoworld_nav_p_img { padding-bottom: 0; }
+
+.ecoworld_container #ecoworld_mobi_nav ul li { margin-left:0; position: relative; }
+#ecoworld_mobi_nav > ul > li:first-child { border-top:0; }
+
+#ecoworld_mobi_nav ul li,#ecoworld_mobi_nav li:hover { background:#fff; }
+
+#ecoworld_mobi_nav > ul > li > a > span > i.fa-home { font-size: 18px; }
+
+/* 4.7 Sticky Header ---------------------------------------------- */
+
+.ecoworld_logo_img a { display: inline-block; }
+.ecoworld_logo_img img { }
+
+@media only screen and (min-width: 768px) { 
+	#ecoworld_Header.sticky-on {position: fixed; width: 100%; left: 0; top: -70px; height: 70px; font-size: 14px; filter: alpha(opacity=97); -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.1); -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,.1); box-shadow: 0 2px 5px 0 rgba(0,0,0,.1); z-index: 999; }
+	#ecoworld_Header.sticky-on img.swm-std-logo { display: none; }
+	#ecoworld_Header.sticky-on img.swm-sticky-logo { display: block; width:auto !important; image-rendering: auto }
+	#ecoworld_Header.sticky-on { min-height: 0; }
+	#ecoworld_Header.sticky-on ul.ecoworld_top_nav > li > a > span,#ecoworld_Header.sticky-on .ecoworld_header_search_icon { line-height: 70px; }
+	.sticky-on .ecoworld_logo_img img { max-height:70px; width: auto;  }
+	.sticky-on .ecoworld_logo_img { width:auto; }
+	img.swm-sticky-logo { display: none; }
+	.ecoworld_l_boxed #ecoworld_Header.sticky-on { left:auto; }
+	/*.ecoworld_l_boxed #ecoworld_Header.sticky-on .ecoworld_logo_menu_holder { overflow: hidden; }*/
+
+}
+
+/* 4.8 Search Icon Section ---------------------------------------------- */
+
+.ecoworld_header_search_icon { float:right; position: relative; }
+.ecoworld_header_search_icon span,.ecoworld_menubar_icon span { cursor: pointer; }
+.ecoworld_menubar_icon { float:right; }
+.ecoworld_h_search_icon,.ecoworld_menubar_icon { z-index: 4; position: relative; }
+.ecoworld_h_search_icon i,.ecoworld_menubar_icon i { width:33px; height:33px; line-height: 33px; font-size: 12px; text-align: center; display: inline-block; background:rgba(0,0,0,0.05); border-radius: 50%; }
+
+.ecoworld_searchbox_holder { width:100%; height:100%; left:0; top:0; position: fixed;  box-sizing: border-box;  z-index: 99999; display: none; font-weight: bold; background-size: cover;  }
+.ecoworld_searchbox_table { display: table; width:100%; height:100%;  }
+.ecoworld_searchbox_table_cell { display: table-cell; vertical-align: middle; width:100%; height:100%; }
+.ecoworld_overlay_search_box {  position: relative; padding-bottom: 10px; z-index: 999999;  }
+
+.ecoworld_overlay_search_box .ecoworld_search_form { display: block; }
+.ecoworld_overlay_search_box .ecoworld_search_button { width:10%; line-height:50px; height:50px; background:none; float:right; padding:0; text-align: right; opacity: 0.5; }
+.ecoworld_overlay_search_box .ecoworld_search_button:hover,.ecoworld_searchbox_close:hover { opacity: 1; background:none; }
+.ecoworld_overlay_search_box .ecoworld_search_form_input { border:0; line-height:50px; padding:0; margin:0; width:90%; box-shadow: none; float:left; background:none; padding:0; }
+.ecoworld_overlay_search_box input.ecoworld_search_form_input:focus { border:0; background:none; box-shadow: none; }
+
+.ecoworld_searchbox_close { font-size:20px; position: absolute; top:50px; right:50px; display: block; width:20px; height:20px; text-align: center; line-height: 20px; opacity: 0.5; cursor: pointer; }
+
+/* ---------------------------------------------- 
+ 	5. Sub Header
+---------------------------------------------- */
+
+#ecoworld_sub_header { position: relative; padding:20px 0; text-align: center; }
+
+.ecoworld_sub_header_title,h1.ecoworld_sub_header_title { margin:0; padding:0; line-height: normal; position: relative; display: block; }
+
+
+/* 5.1 Breadcrumbs ---------------------------------------------- */
+
+.ecoworld_breadcrumbs_container { position: relative; }
+.ecoworld_breadcrumbs { padding:0; display:block; position: relative; text-align: center; z-index: 2; }
+.ecoworld_breadcrumbs a { text-decoration: none; }
+.ecoworld_breadcrumbs a:hover { opacity: 0.8; }
+.ecoworld_breadcrumbs span.ecoworld_bc_sep {  width:20px; text-align: center; padding:0 7px; }
+.ecoworld_breadcrumbs .fa-home { margin-right: 3px; }
+
+/* 5.2 Z-indexes ---------------------------------------------- */
+
+.ecoworld_logo { z-index: 2; }
+.ecoworld_nav { z-index: 11; }
+	ul.ecoworld_top_nav li ul { z-index: 9998; }
+		ul.ecoworld_top_nav li li ul { z-index: 1000; }
+
+#top_mini_nav { z-index: 3; }
+#ecoworld_mobi_nav_btn { z-index: 999991; } 
+#ecoworld_mobi_nav .ecoworld-mini-menu-arrow { z-index: 99; }
+
+#ecoworld_sub_header { z-index: 1; }
+
+.ecoworld_logo_menu_header { z-index: 9;}
+
+/* 5.3 Google map - Revolution slider ---------------------------------------------- */
+
+.ecoworld_header_google_map,.ecoworld_header_slider { margin-bottom: -19px; }
+.home.blog .ecoworld_header_google_map,.home.blog .ecoworld_header_slider,.home.blog #ecoworld_sub_header { margin-bottom:0; }
+.ecoworld_header_googlemap_title { font-size: 170%; padding:10px; }
+.ecoworld_header_googlemap_info { line-height: 20px;  padding:0 10px 10px; font-size: 80%;  }
+.ecoworld_google_map_embed_code iframe { display: block; }
+/* ---------------------------------------------- 
+ 	6. Sidebar
+---------------------------------------------- */
+
+.sidebar { display: block; padding:0; }
+.sidebar a { text-decoration: none; position: relative; }
+
+.ecoworld_widget_box { position: relative; display: block; clear:both; width:100%; position: relative; float: left; }
+
+.sidebar .ecoworld_sidebar_ttl h3 { line-height: 1em; display: block; min-height: 40px; position: relative; margin-bottom: 30px; padding:9px 20px; text-align: center; box-shadow: 0 0 12px rgba(0, 0, 0, 0.1); }
+.sidebar .ecoworld_sidebar_ttl h3 span { display: block; width:100%; height:100%; }
+
+.sidebar .ecoworld_widget_content > ul,.sidebar .ecoworld_widget_content ul.menu { list-style: none; }
+
+.ecoworld_widget_content { width:100%; display: block; padding:0; }
+
+.sidebar p { line-height: 1.8em; }
+.sidebar ul li { border-bottom: 1px solid; margin:0; padding: 9px 0; display: block; line-height: 1.8em; }
+
+.sidebar ul li ul { padding:15px 0 0 0; }
+.sidebar ul li ul li { border:0; padding:5px 0 5px 10px; }
+.sidebar ul li ul li:first-child { border:0; }
+.sidebar .ecoworld_widget_box,.sidebar .ecoworld_fb_subscribe_wid { margin-bottom:50px; }
+
+.sidebar .ecoworld_list_widgets ul li { padding-left:25px; position: relative; }
+.sidebar .ecoworld_list_widgets { display: block; clear:both; }
+.sidebar .ecoworld_list_widgets ul li:before { content:''; position: absolute; top:18px; left:9px; width:4px; height:4px; display: block; border-radius: 50%; opacity: 0.5; background:#606060; }
+.sidebar .ecoworld_list_widgets ul li ul li:before { top:15px; left:0; }
+.sidebar .ecoworld_list_widgets ul li:hover:before { opacity: 1; }
+.sidebar .ecoworld_list_widgets .ecoworld_sidebar_ttl h3 { margin-bottom: 20px; }
+.sidebar .ecoworld_list_widgets ul li:last-child { border:0; padding-bottom:0; }
+
+
+.sidebar .ecoworld_list_widgets ul li ul li { padding-left: 15px; }
+.sidebar .ecoworld_list_widgets ul li:before { left:10px; }
+
+
+.widget_calendar .ecoworld_sidebar_ttl h3 { margin-bottom:0px; }
+
+
+
+/* ---------------------------------------------- 
+ 	7. Footer
+---------------------------------------------- */
+
+/* 7.1 Widget Footer ---------------------------------------------- */
+
+.footer { margin:0 auto; position: relative; padding:0; clear:both; background-position: center center; }
+
+.ecoworld_large_footer { padding:30px 0 0 0; }
+
+.ecoworld_footer_bg {  float:left; width:100%; text-align: center;  }
+
+.ecoworld_footer_widget { margin-bottom: 40px; text-align: left; }
+
+.ecoworld_footer_widget h3 { position: relative; padding-bottom: 10px; margin-bottom: 25px; }
+
+.ecoworld_footer_widget h3 span:before { content:''; position: absolute; display: block; bottom:0; left:0; width:34px; height:2px; }
+
+.footer ul { padding:0; margin:0; }
+.footer ul li { border-bottom: 1px solid; position: relative; padding:7px 0; margin-left: 0;  }
+.footer ul li i { margin-right: 5px; }
+.footer ul li a { text-decoration: none; }
+.footer ul li:first-child { margin-top: 0; padding-top: 0;  }
+.footer ul li:last-child { border-bottom:0; }
+.footer ul ul { padding-left: 5px; margin: 15px 0 0px 10px;}
+.footer ul ul li { border:0; padding: 3px 0 3px 0;}
+
+.footer input,.footer textarea { background: none; }
+.footer select { margin:0; width:100%; background: none;  line-height: normal; padding:10px 12px; }
+
+.tagcloud a { border:1px solid; }
+
+/* 7.2 Small Footer ---------------------------------------------- */
+
+.ecoworld_small_footer { position: relative; display: block; width:100%; height:auto; display: block; border-top:1px solid rgba(255,255,255,0.1); padding:0 0 50px 0; line-height: 30px; background:rgba(0,0,0,0.1); }
+.ecoworld_small_footer_holder { display: block; width:100%; height:auto; border:1px solid rgba(255,255,255,0.1); border-top:0; }
+
+
+.ecoworld_footer_copyright { height: 60px; padding:15px 0; }
+.footer .ecoworld_footer_copyright p { font-size: 14px; margin:0; padding-right: 20px; line-height: 30px; }
+.ecoworld_footer_copyright a { text-decoration: none; }
+
+#ecoworld_go_top_scroll_btn { width:61px; height:60px; line-height: 60px; border-left:1px solid rgba(255,255,255,0.1); font-size: 16px; display:inline-block; text-align: center; cursor: pointer; float:right; }
+
+.footer .ecoworld_small_footer ul.ecoworld_small_footer_sm_icons li { border:0; margin:0; padding:0; display: inline-block; float:left; width:20px; width:61px; height:60px; line-height: 60px; border-right:1px solid rgba(255,255,255,0.1); text-align: center; }
+
+.footer .ecoworld_small_footer ul.ecoworld_small_footer_sm_icons li a { opacity: 0.8; width:61px; height:60px; line-height: 60px; display: block; font-size: 14px; }
+.footer .ecoworld_small_footer ul.ecoworld_small_footer_sm_icons li a i { margin:0; font-size:15px; }
+
+.footer .ecoworld_small_footer ul.ecoworld_small_footer_sm_icons li:hover a { opacity: 1; }
+.footer .ecoworld_small_footer ul { display:block;}
+
+/* 7.3 Footer Menu ---------------------------------------------- */
+
+.ecoworld_footer_menu { font-weight: bold; background:rgba(0,0,0,0.1); border-bottom:1px solid rgba(255,255,255,0.1); border-top:1px solid rgba(255,255,255,0.1); display: block; width:100%; height:auto; padding-top:50px;  }
+.ecoworld_footer_menu a { text-decoration: none; }
+.ecoworld_footer_menu ul li { display: inline-block; padding:0 17px; line-height: 30px; border:0; }
+.ecoworld_footer_menu ul { width:100%; min-height:60px; padding:15px 0; display: block; text-align: center;  }
+.ecoworld_footer_menu ul li:after { content:''; width:4px; height:4px; display: block; position: absolute; background:rgba(0,0,0,0.2); border-radius: 50%; left:0; top:50%; margin-top: -2px; margin-left:-4px; }
+.ecoworld_footer_menu ul li:first-child:after { display: none; }
+
+/* --------------------------------------------- 
+ 	8. Blog
+---------------------------------------------- */
+
+.ecoworld_post_image img, .ecoworld_post_image { display: block; position: relative; z-index: 3; text-align: center;  }
+.ecoworld_post_image { padding:0;  display: block; margin-bottom: 2px; }
+.ecoworld_post_image img { margin:0 auto; }
+
+.ecoworld_post_image span.ecoworld_pf_icon_box { position: absolute; z-index: 4; top:25px; right:25px; width:46px; height:46px; line-height: 46px; text-align: center; display: block; border-radius: 50%; background:rgba(255,255,255,0.8); }
+
+.format-gallery .ecoworld_post_image .ecoworld_tile_gallery ul li span { display: none; }
+
+.ecoworld_post_content {  position: relative; min-height:100px;  height:100%; margin-bottom: 90px; clear:both;  }
+.single .ecoworld_post_content { margin-bottom: 0px; }
+
+.ecoworld_post_content_block { position: relative; display: block; }
+
+.ecoworld_blog_post .ecoworld_post_content { padding:20px; background:rgba(0,0,0,0.03); }
+
+body:not(.single-post) .ecoworld_blog_post.post-sticky.ecoworld_blog_post .ecoworld_post_content { border:1px solid rgba(0,0,0,0.1); }
+
+
+/* 8.1 Author ---------------------------------------------- */
+
+/*Author*/
+.ecoworld_post_author_avatar { width:75px; height:75px;  border-radius: 100px; position: absolute; margin: 0 auto -35px -35px; left:50%; text-align: center; bottom:0; }
+.ecoworld_post_author_avatar img { width:75px; height:75px; border-radius: 100px; border:4px solid; }
+
+.ecoworld_post_divider,.ecoworld_meta_bottom_divider { height:4px; border-top:1px solid; border-bottom:1px solid; width:150px; margin:20px auto 15px; display: block; }
+
+/* 8.2 Title Section, Icon ---------------------------------------------- */
+
+.ecoworld_post_title h1,.ecoworld_post_title h2 { margin-bottom:0; }
+
+.ecoworld_post_button { position: relative; display: block; clear:both; margin:40px 0 -45px 0; width:auto; text-align: center; }
+
+.ecoworld_post_button a { width:auto; z-index: 2; position: relative; text-decoration: none; font-size: 90%; display: inline-block; height:50px; line-height: 45px; padding:0 26px; margin:0; overflow: visible; border:3px solid #fff; font-weight: bold; background:#f2f2f2; box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);  }
+
+/* 8.3 Meta ---------------------------------------------- */
+
+.ecoworld_blog_whitebox_border { display: block; border:3px double rgba(255,255,255,0.4); margin:-65px 20px 0 20px; z-index: 4; position: relative; height:65px; border-bottom:0; padding-top: 20px; } 
+
+.ecoworld_post_title_meta { position: relative; display: block; margin:0; z-index: 5; padding:25px 20px 25px 20px;  margin:-45px 40px 30px 40px; background:#fff; box-shadow: 0 0 12px rgba(0, 0, 0, 0.1); text-align: center; }
+
+.ecoworld_post_meta { position: relative; padding:0; font-size: 90%; font-weight: normal; display:block; margin:0; overflow: hidden; }
+.ecoworld_post_meta ul { margin:0; padding:0 0 0 22px; display: block;  width:100%; }
+.ecoworld_post_meta ul li {  margin:0 18px; list-style: none; display: inline-block; line-height: normal; padding:0; }
+.ecoworld_post_meta ul li i { width:22px; margin-left: -22px; text-align: left; }
+.ecoworld_post_meta ul li a { text-decoration: none; display: inline-block; }
+.ecoworld_post_meta ul li i.fa-clock-o { margin-right:-3px; }
+
+.ecoworld_post_category { text-align: center; text-transform: uppercase; font-weight: bold; }
+.ecoworld_post_category_sep { display: block; text-align: center; font-size: 5px; margin:2px 0 5px; }
+.ecoworld_post_category_sep i { margin:0 2px; color:rgba(0,0,0,0.18);}
+
+.ecoworld_post_bottom_meta { margin:40px 17px 15px; display: block; clear:both; }
+
+.ecoworld_post_share_links { display: block; text-align: center; float:right; }
+
+ul.ecoworld_post_share_icons_list { display: inline-block; height:35px; padding:0; margin:0; }
+ul.ecoworld_post_share_icons_list li { display: inline-block; float:left; padding:0;  margin:2px; height:33px; width:33px; line-height: 31px; border-radius: 50%; text-align: center; }
+ul.ecoworld_post_share_icons_list li { display: block; width:33px; height:33px; }
+ul.ecoworld_post_share_icons_list li i { line-height: 31px; font-size: 13px; display: block; width:100%; height: 100%; margin-left: -1px; }
+ul.ecoworld_post_share_icons_list li a,ul.ecoworld_post_share_icons_list li a:hover { height:33px; width:33px; display: inline-block; }
+
+.ecoworld_post_tags { display: inline-block; float:left; margin-top: 7px; }
+.ecoworld_post_tags i { font-size: 14px; float:left; margin-right: 8px; line-height: 20px;  margin-top: 3px; }
+.ecoworld_post_tags a { display: inline-block; font-size: 80%; background:transparent; border:1px solid rgba(0,0,0,0.15); text-decoration: none; padding:3px 10px; float:left; margin:0 4px 4px 0; line-height: 20px; }
+.ecoworld_post_tags a:hover { border-color:rgba(0,0,0,0.05); }
+.ecoworld_post_summary { padding:0 17px; }
+
+.format-video .ecoworld_blog_whitebox_border, .format-audio .ecoworld_blog_whitebox_border { display:none; }
+.format-video .ecoworld_post_title_meta, .format-audio .ecoworld_post_title_meta { margin-top:-2px; }
+
+/* 8.4 Quote ---------------------------------------------- */
+
+.ecoworld_pf_quote { overflow: hidden; }
+body:not(.single) .ecoworld_only_quote_text.ecoworld_blog_post.format-quote .ecoworld_post_content_block { display: none; }
+body:not(.single) .ecoworld_only_quote_text .ecoworld_post_content { margin-bottom: 80px; }
+body:not(.single) .ecoworld_blog_grid.ecoworld_only_quote_text .ecoworld_post_content {margin-bottom: 70px; }
+.single .format-quote .ecoworld_pf_quote_text { padding-bottom: 30px; }
+
+.ecoworld_posts_list { position: relative; }
+
+.ecoworld_post_masonry .ecoworld_posts_list .ecoworld_row {  margin:0 -13px;  }
+.ecoworld_post_masonry .ecoworld_posts_list .ecoworld_column_gap { margin:0; padding:0 13px; }
+
+.ecoworld_post_title h2 a { text-transform: none; }
+.ecoworld_blog_post .ecoworld_column_gap { margin:0; }
+.ecoworld_post_image iframe,.ecoworld_post_image audio { display: block; }
+
+.ecoworld-love .fa-heart { display: none; }
+.ecoworld-love.loved .fa-heart-o { display: none; }
+.ecoworld-love.loved .fa-heart { display: inline-block; }
+
+.ecoworld_post_ad { display: block; clear:both; position: relative; }
+.ecoworld_post_ad img { max-width: 100%; width:100%; }
+
+/* 8.5 Blog Style Grid ---------------------------------------------- */
+
+.ecoworld_blog_grid .ecoworld_post_title_meta { padding: 15px; margin: -25px 16px 20px 16px; }
+.ecoworld_blog_grid .ecoworld_post_summary { text-align: center; }
+.ecoworld_blog_grid .ecoworld_post_button { margin-bottom: -41px; margin-top: 20px; }
+.ecoworld_blog_grid .ecoworld_post_button a { font-size: 18px; height:41px; line-height: 36px; padding:0; width:41px; border-radius: 50%; }
+.ecoworld_blog_grid .ecoworld_post_category {  }
+.ecoworld_blog_grid .ecoworld_post_category span,.ecoworld_blog_grid .ecoworld_post_category a { font-size: 90%; opacity: 0.7;  }
+.ecoworld_blog_grid .ecoworld_post_category a:hover { opacity: 1; }
+.ecoworld_blog_grid .ecoworld_post_content { margin-bottom:60px; }
+
+.ecoworld_blog_grid_date { position: absolute; width:54px; height:65px; border-top:3px solid rgba(0,0,0,0.6); display: block; left:50%; margin-left: -27px; top:-23px; z-index: 5; text-align: center; font-weight: bold; }
+.ecoworld_blog_grid_date span { display: block; line-height: 22px; text-transform: uppercase;  }
+.ecoworld_blog_grid_date_day { font-size: 130%; margin-top: 9px;  }
+.ecoworld_blog_grid_date_month { font-size: 90%;   }
+
+.ecoworld_global_image_overlay:hover .ecoworld_blog_grid_img .ecoworld_slider_box .flex-direction-nav .flex-next { right:0; left:auto; }
+.ecoworld_global_image_overlay:hover .ecoworld_blog_grid_img .ecoworld_slider_box .flex-direction-nav .flex-prev { left:0; right:auto; }
+
+/* 8.6 Grid Image Hover ---------------------------------------------- */
+
+.ecoworld_global_grid_hover { position: absolute; width:100%; height:100%; display: block; z-index: 2; top:0; left:0; opacity:0; }
+.ecoworld_global_grid_hover span { position: absolute; z-index: 3; display: block;  top:50%; left:50%; text-align: center; width:44px; height:44px; margin-left: 0px; margin-top: 0px; opacity: 1; }
+.ecoworld_global_grid_hover span:after { content:''; width:2px; height:0px; display: block; position: absolute; top:50%; left:50%;  }
+.ecoworld_global_grid_hover span:before { content:''; height:2px; width:0px; display: block; position: absolute; top:50%; left:50%;  }
+.ecoworld_global_image_overlay:hover .ecoworld_global_grid_hover { opacity: 0.8;  }
+.ecoworld_global_image_overlay:hover .ecoworld_global_grid_hover span:after { height:44px; top:0; left:50%;  }
+.ecoworld_global_image_overlay:hover .ecoworld_global_grid_hover span:before { width:44px; top:50%; left:0; }
+.ecoworld_global_image_overlay:hover .ecoworld_global_grid_hover span { margin-left: -22px; margin-top: -22px; }
+
+/* 8.7 Tile Gallery ---------------------------------------------- */
+
+.ecoworld_tile_gallery { display: block; }
+.ecoworld_tile_gallery ul { padding:0; margin:0; }
+.ecoworld_tile_gallery ul li { padding:0; margin:0; width:25%; display: inline-block; position: relative; font-size: 0; float:left; padding-right: 1px; padding-bottom: 1px; }
+.ecoworld_tile_gallery ul li:first-child { width:100%; display: block; clear:both; padding-right: 0; }
+.ecoworld_tile_gallery ul li:nth-child(2) { clear:both; }
+.ecoworld_tile_gallery ul li:nth-child(2),.ecoworld_tile_gallery ul li:nth-child(3) { width:50%; }
+.ecoworld_tile_gallery ul li:nth-child(3),.ecoworld_tile_gallery ul li:nth-child(7) { padding-right: 0; }
+.ecoworld_tile_gallery ul li img { margin:0; padding:0; }
+
+/* 8.8 Post Single Styles ---------------------------------------------- */
+
+
+.ecoworld_single_section { display: block; margin-top: 30px; clear:both; }
+h5.ecoworld_single_pg_titles,
+#comments h3.comment-reply-title { display: block; position: relative; }
+h5.ecoworld_single_pg_titles span,
+#comments h3.comment-reply-title span  { padding-right: 25px; z-index: 11; position: relative; }
+
+/* 8.9 About author ---------------------------------------------- */
+
+.ecoworld_about_author { position: relative; clear:both; display: block; margin:0 0 0px 0; background:rgba(0,0,0,0.03);  border-top:1px solid rgba(0,0,0,0.1); padding:35px; }
+.archive.author .ecoworld_about_author { border:0; }
+.ecoworld_about_author img { float:left; margin: 0 20px 0 0; width:127px; height:127px; border-radius:50%;  }
+.ecoworld_about_author p { padding-left: 0; overflow: hidden; margin-bottom: 10px; }
+.ecoworld_about_author_biotext { overflow: hidden; }
+.ecoworld_site_content .ecoworld_about_author h6 { margin:0 0 5px 0; font-size: 100%; text-transform: uppercase; font-weight: bold; }
+.ecoworld_about_author h6 a { text-decoration: none; }
+.ecoworld_author_page_box .ecoworld_about_author { margin:0; }
+body.author .ecoworld_author_page_box .ecoworld_content_wrap { width:100%; }
+body.author .ecoworld_about_author_box { padding:0; }
+body.author .ecoworld_about_author { padding:35px; }
+
+.ecoworld_site_content h5.ecoworld_single_pg_titles { margin-bottom:  30px; }
+
+#respond h3,.ecoworld_single_pg_titles {  margin:0; }
+
+.ecoworld_author_page_box { margin-bottom: 50px; }
+ul.ecoworld_post_author_icon { padding:0; margin:0; }
+ul.ecoworld_post_author_icon li { float:left; list-style: none; padding:0; margin:0 10px 0 0; font-size: 15px; }
+ul.ecoworld_post_author_icon li a { color:#888; }
+
+/* 8.10 Related Posts ---------------------------------------------- */
+
+.ecoworld_related_posts_wrap { clear:both; margin-bottom: 50px; }
+.ecoworld_related_posts { }
+.ecoworld_related_posts ul { padding:0; margin:0 -1% 0 0; }
+.ecoworld_related_posts ul li { float:left; padding:0; margin:0 4% 0 0; width:30%; list-style: none; position: relative; }
+.ecoworld_related_posts ul li:last-child { margin-right: 0; }
+.ecoworld_related_posts { }
+.ecoworld_related_link { margin:0; font-size: 100%; font-weight: bold; line-height:1.5em;  }
+.ecoworld_related_link a {  margin-bottom: 0; }
+.ecoworld_related_posts ul li img { height:auto; margin-bottom: 15px; max-width: 100%; }
+
+.ecoworld_related_post_text { display: block; clear:both; }
+.ecoworld_related_post_text span { display: block; }
+.ecoworld_related_post_text span.ecoworld_related_date { font-size: 90%; opacity: 0.85; }
+
+/* 8.11 Comments ---------------------------------------------- */
+
+#comments,.ecoworld_container p.ecoworld_nocomments { padding:0 0 50px 0; clear:both; position: relative; }
+#comment-wrap { position: relative; }
+#comment-wrap > ol { margin-left: 0; }
+#comment-wrap p { margin:0 0 15px 0;  }
+#comments p.ecoworld_nocomments { padding:0; clear:both; margin:0; border:0; }
+
+.comment_body { position: relative; padding:0; margin:0; }
+.comment_avatar {float:left; display: inline-block; margin-left: -70px; }
+.comment_avatar img { display: inline-block; width:50px; height:50px; float:left; border-radius: 50%; }
+.comment_postinfo { margin-bottom: 5px; }
+.comment_author { margin-right: 7px; text-transform: uppercase; font-size: 90%; }
+.comment_author, .comment_author a { text-decoration: none; font-weight: 600; line-height:24px; margin-bottom: 10px; }
+.comment_date { font-size: 80%; display:inline-block; line-height: 18px; text-transform: uppercase; padding-top: 2px; }
+.comment_date i { margin-right: 5px; }
+.comment_content {  padding:0 0 10px 70px; position: relative; float:left; z-index:1; width:100%;  }
+.comment_text { padding-top: 5px; }
+
+.ecoworld_comment_reply { display: block; position: relative; float:right; font-weight: bold; }
+#comments .ecoworld_comment_reply a.comment-reply-link,#comments .ecoworld_comment_reply a.comment-reply-login { padding:0 0 0 20px; display: inline-block; width:auto; text-decoration: none; font-size: 80%; line-height: 30px; cursor:pointer; margin-top:0; text-transform: uppercase; }
+#comments .ecoworld_comment_reply a.comment-reply-link i { margin-right: 5px; }
+#comments .ecoworld_comment_reply a.comment-reply-link { text-align: center; margin:0; opacity: 0.8; }
+#comments .ecoworld_comment_reply a.comment-reply-link:hover { opacity:1; }
+#comment-wrap ol.commentlist li ul.children { padding-left: 40px; }
+#comment-wrap ol { padding:0; margin:0; }
+#comment-wrap ol li ul { padding-bottom: 0 }
+#comment-wrap ol li.comment,#content #comment-wrap ol li.post.pingback { background:none; list-style: none; margin-left: 0; padding:20px 0 0 0;  }
+#comment-wrap ol > li.comment:first-child { border-top:0; padding-top: 0; }
+#comment-wrap ol > li.comment:last-child .comment_content { padding-bottom: 10px;  }
+#comment-wrap ol > li.comment:first-child .comment_content { padding-top: 0; }
+#comments li.comment article.comment_body { padding:20px 20px 0 20px; }
+
+/* 8.12 Comment Form ---------------------------------------------- */
+
+#respond { position: relative; clear:both; padding:0; }
+#comments #respond:after,#comments #respond:before { display: none; }
+#respond h3 { padding:0px; margin:0 0 30px 0; }
+#respond h3 i { margin-right: 10px; }
+#comments #respond h3 { border:0; margin:0; text-align: left; padding:0; }
+#comments #respond h3 i { display: none; }
+#comments #respond { padding:30px 0 10px 0px; border:0; width:100%; margin:0; }
+#comments #respond #commentform { padding:0; border:0; }
+#respond h3 small a#cancel-comment-reply-link { display:block; text-decoration: none; font-size: 75%; padding: 5px 0 10px 0; color:red; }
+#respond .form-allowed-tags,#respond p.comment-notes { display:none; }
+#comments #respond h3.comment-reply-title span:after,#comments #respond h3.comment-reply-title:after { display:none; }
+
+#commentform { padding:0; }
+#commentform label { clear:both; font-weight: normal; }
+#commentform textarea#comment { width: 99%; clear:both; margin: 0 0 15px 0; height:150px; }
+#commentform input[type=text] { width: 50%; float:left; display:inline-block; margin-right: 1%; clear:both; text-indent: 10px; }
+#commentform input[type=text],input[type=password], #commentform textarea { font-size:90%; padding: 10px 0; margin-bottom: 15px;}
+#commentform textarea { padding: 10px 2%;  }
+#commentform p { width:auto; margin:0;  }
+input[type=password] { margin-bottom: 0; display:inline-block; padding:12px; }
+#commentform .hidden { display: none; }
+input[type="submit"] { display: inline; font-weight: bold; }
+
+#commentform p.comment-form-author,#commentform p.comment-form-email,#commentform p.comment-form-url { width:31%; float:left; margin-right: 3%; }
+#commentform p.comment-form-author input[type=text],#commentform p.comment-form-email input[type=text],#commentform p.comment-form-url input[type=text]{ width:100%; }
+#commentform p.comment-form-url { margin-right: 0; }
+#commentform p.comment-form-comment { width:100%; float:left; }
+#commentform p.form-submit { clear:both; margin-top:10px; display: inline-block; float:left; margin-bottom: 30px; }
+#commentform p.form-submit input[type="submit"] { height:auto; padding:0 30px; }
+
+.post-password-form input[type=password] { padding:6px 12px; }
+
+/* 8.13 Post Single Next Prev Pagination ---------------------------------------------- */
+
+.ecoworld_post_single_pagination { display: block; clear:both;  margin:0 0 50px; text-transform: uppercase; font-size: 85%; font-weight: bold; border-top:1px solid rgba(0,0,0,0.1); background:rgba(0,0,0,0.03); padding:20px 15px; position: relative; overflow: hidden; }
+.ecoworld_pp_arrow { font-size: 20px; line-height: 28px; }
+.ecoworld_next_prev_box { float:left; width:49%; display: inline-block; }
+.ecoworld_pp_next { text-align: right; float:right; }
+.ecoworld_pp_link span { display: block; overflow: hidden;  }
+
+.ecoworld_pp_prev { padding-right:30px; }
+.ecoworld_pp_next { padding-left:30px; }
+
+.ecoworld_pp_prev .ecoworld_pp_arrow { float:left; }
+.ecoworld_pp_next .ecoworld_pp_arrow { float:right; }
+
+.ecoworld_pp_link_text { font-size: 90%; padding-bottom:1px; }
+.ecoworld_pp_prev .ecoworld_pp_arrow { margin-right: 10px; }
+.ecoworld_pp_next .ecoworld_pp_arrow { margin-left: 10px; }
+
+.ecoworld_next_prev_box a { width:100%; height:100%; }
+.ecoworld_next_prev_box:hover .ecoworld_pp_arrow,
+.ecoworld_next_prev_box:hover .ecoworld_pp_link_text  { opacity:1;  }
+
+.ecoworld_pp_view_all { position: absolute; top:50%; left:50%; width:40px; margin-left: -20px; margin-top: -20px; }
+.ecoworld_pp_view_all span { width:40px; height:40px; line-height: 40px; line-height: 38px; display: block; border:1px solid rgba(0,0,0,0.15); text-align: center;  border-radius: 50%; font-size: 18px; background:#f7f7f7; position: relative; z-index: 3;   }
+.ecoworld_pp_view_all:after { content:''; position: absolute; left:50%; margin-left: -1px; top:-200px; margin-bottom: -200px; height:1000px; width:1px; display: block; background:rgba(0,0,0,0.1); z-index: 2;  }
+
+/* ---------------------------------------------- 
+ 	9. Pagination
+---------------------------------------------- */
+
+.ecoworld_pagination_wrap { width:auto; margin:0 auto 30px; text-align: center; }
+.ecoworld_pagination { width:auto;  display: block; }
+
+.ecoworld_pagination a,.ecoworld_pagination .page-numbers.current,
+#comments .ecoworld-paginate-com a,#comments .ecoworld-paginate-com span, .ecoworld_pagination_menu > a,.ecoworld_pagination_menu > span { text-align: center; border-radius: 50%; margin:0; display: inline-block; width:36px; height:36px; line-height: 34px; }
+.ecoworld_pagination .page-numbers.current { font-weight: bold; }
+
+.ecoworld_pagination a.prev.page-numbers,.ecoworld_pagination a.next.page-numbers { position:relative; border-radius: 3px; display: inline-block; width:36px; height:36px; line-height: 34px; }
+
+.ecoworld_pagination a,.ecoworld_pagination .page-numbers.current,.ecoworld_pagination a.prev.page-numbers,.ecoworld_pagination a.next.page-numbers,
+#comments .ecoworld-paginate-com span, .ecoworld_pagination_menu > a,.ecoworld_pagination_menu > span { width:36px; height:36px; border-radius: 50%; text-align: center; line-height: 34px; font-size: 90%; }
+
+/* 9.1 Comments and Post Content Pagination ---------------------------------------------- */
+
+#comments .ecoworld-paginate-com,.ecoworld_pagination_menu { margin-top: 30px; }
+#comments .ecoworld-paginate-com span.page-numbers.current, .ecoworld_pagination_menu > span { font-weight: bold; }
+
+/* 9.2 Next-Previous Posts ---------------------------------------------- */
+
+.ecoworld_next_prev_pagination { font-weight: bold; font-size: 90%; clear:both; display: block; }
+.ecoworld_container .ecoworld_next_prev_pagination a,.ecoworld_next_prev_pagination a { padding:8px 15px; border-radius: 5px; text-transform: uppercase; letter-spacing: 1px; }
+.ecoworld_next_prev_pagination a:hover { text-decoration: none; }
+.ecoworld_next_prev_pagination .post-prev { float: left; }
+.ecoworld_next_prev_pagination .post-prev span { margin-right: 5px; }
+.ecoworld_next_prev_pagination .post-next { float: right; text-align: right; }
+.ecoworld_next_prev_pagination .post-next span { margin-left: 5px; }
+
+/* 9.3 Infinite Scroll ---------------------------------------------- */
+
+.ecoworld_infiniteScroll_loader { position: absolute; bottom: 30px; left: 50%; margin-left: -30px; height: 24px; line-height: 24px; width: 30px; text-indent: -9999px; display: block; width:60px; height:60px; border-radius:5px; z-index: 999; overflow: hidden; }
+
+.ecoworld_infinite_scroll_style .ecoworld_infiniteScroll_loader { bottom:-30px; }
+
+#infscr-loading img { display: none !important }
+.ecoworld_infiniteScroll_pagination { display: none }
+.ecoworld_infiniteScroll_wrapper { position: relative; padding-bottom: 40px; }
+
+.ecoworld_infiniteScroll_pagination .ecoworld_next_prev_pagination { display: none; }
+
+/* ---------------------------------------------- 
+ 	10. Search Page
+---------------------------------------------- */
+
+.ecoworld_search_featured_img { float:left; margin-right: 25px; margin-top: 5px; }
+.ecoworld_search_featured_img img { width:150px; padding:5px; }
+.ecoworld_search_page_text { overflow: hidden; }
+
+.ecoworld_search_pg_subtitle { margin-bottom: 30px; }
+
+ul.ecoworld_search_list { padding:5px 0; margin:0 0 50px 0; }
+ul.ecoworld_search_list > li { list-style: none; margin:0 0 -1px 0; padding: 30px 30px 10px 30px; }
+ul.ecoworld_search_list > li h5 { margin:0; display: block; font-weight: bold;  }
+ul.ecoworld_search_list > li h5 span { display: block; opacity: 0.7; }
+ul.ecoworld_search_list > li h5 span i { margin-right: 5px; }
+
+.ecoworld_page_box_content.search_pg_form form { width:70%; }
+.ecoworld_page_box_content.search_pg_form { padding:30px; }
+
+.ecoworld_search_page_readmore { margin-top: -15px; }
+.ecoworld_search_page_readmore a { font-weight: bold; text-transform: uppercase; font-size: 85%; }
+.ecoworld_search_page_readmore a i { margin-left: 5px; }
+
+/* 10.1 Meta ---------------------------------------------- */
+
+.ecoworld_search_meta { font-weight: normal; padding-bottom: 15px;  }
+.ecoworld_search_meta {  position:relative; margin:0; display: block; }
+.ecoworld_search_meta ul { padding:0; margin:0; }
+.ecoworld_search_meta ul li { list-style: none; display: inline-block; margin:0 9px 0 14px; padding:5px 0 0 0; font-size: 90%; opacity: 0.8; }
+.ecoworld_search_meta ul li:before { content:"\f111"; font-family: fontAwesome; font-size: 6px; margin-left: -14px; float:left; padding: 0; text-decoration: none; }
+.ecoworld_search_meta ul li:first-child:before { content: ""; margin-left:0; }
+.ecoworld_search_meta ul li:first-child { margin-left:0; }
+.ecoworld_search_meta ul li:last-child { margin-right:0; }
+
+/* 10.2 No Result Text ---------------------------------------------- */
+
+.ecoworld_search_page_no_result_text { text-align: center;  }
+h4.ecoworld_no_search_result_title,.search-no-results h4.ecoworld_search_pg_subtitle { text-align: center; display: block; clear:both; }
+.ecoworld_search_page_no_result_text form { display: inline-block; float:none; margin-top: 20px; position: relative; }
+.ecoworld_search_page_no_result_text form input[type="text"].ecoworld_search_form_input { width:500px; position: relative; padding-left: 15px; }
+.ecoworld_search_page_no_result_text form button.ecoworld_search_button { position: absolute; top:0; right:0; background:none; padding:12px 15px 12px 12px; line-height: 24px; height:24px; }
+
+/* ---------------------------------------------- 
+ 	11. Archives Page
+---------------------------------------------- */
+
+.ecoworld_container .ecoworld_archives_content ul { padding:0; margin:0 0 50px 0; }
+.ecoworld_container .ecoworld_archives_content ul li { list-style: none; padding:10px 0 10px 20px; margin:0; display: inline-block; width:100%; }
+.ecoworld_container .ecoworld_archives_content ul li:first-child { border-top:0; }
+.ecoworld_container .ecoworld_archives_content ul li span.ecoworld_archive_page_date { min-width: 100px;  display: inline-block; opacity: 0.8; font-size: 90%; margin-right: 20px; }
+.ecoworld_container .ecoworld_archives_content ul li span.ecoworld_archive_page_titles {  display: inline-block; margin:0; }
+
+/* ---------------------------------------------- 
+ 	12. Causes Page
+---------------------------------------------- */
+
+.ecoworld_causes_box { margin-bottom: 30px; }
+
+.ecoworld_row.ecoworld_causes_grid { margin:0 -15px; }
+.ecoworld_causes_box .ecoworld_column_gap { padding:0 15px; }
+
+.ecoworld_cause_grid_box { background:rgba(0,0,0,0.03); padding:20px; text-align: center; } 
+
+.ecoworld_cause_img { position: relative; } 
+.ecoworld_cause_grid_funded { position: absolute; top:0; left:50%; border:2px solid #f7f7f7; font-size:90%; display: block; width:auto; height:36px; line-height: 32px; font-weight: bold; margin-top: -12px; z-index: 5; } 
+.ecoworld_cause_grid_funded span { padding:0 15px; }
+
+.ecoworld_cause_whitebox_border { display: block; border:3px double rgba(255,255,255,0.4); margin:-45px 20px 0 20px; z-index: 4; position: relative; height:45px; border-bottom:0; padding-top: 20px; } 
+.ecoworld_cause_whitebox { display: block; clear:both; background:#fff; margin:-25px 40px 20px 40px; z-index: 5; position: relative; padding:10px 15px; box-shadow:0px 0px 15px rgba(0,0,0,0.08);  } 
+.ecoworld_cause_whitebox span { font-weight: bold; font-size: 90%; line-height: 20px; }
+
+.ecoworld_cause_bar { padding:4px 0; }
+.ecoworld_cause_bar_in { position:absolute; top:0; left:0; z-index:1; overflow:hidden; width:100%; height:100% }
+.ecoworld_cause_bar_out, .ecoworld_cause_bar_in, .ecoworld_cause_bar_block { display: block; }
+.ecoworld_cause_bar_block { position: relative;  height: 4px; background-color:rgba(0,0,0,0.16); }
+.ecoworld_cause_bar_out { position: absolute; top:0; left:0; height: 100%; width:30%; }
+.ecoworld_cause_text { padding:0 10px; } 
+.ecoworld_cause_title h4 a { font-size: 18px; } 
+.ecoworld_site_content .ecoworld_cause_title h4 { line-height:27px; margin:5px 0; }
+
+.ecoworld_cause_donate_button { margin-bottom: 20px; display: block; }
+.ecoworld_cause_donate_button a.button { padding:0 40px; }
+
+/*cause standard view*/
+.ecoworld_cause_standard_view .ecoworld_cause_img { float:left; width:40%; display: inline-block; }
+.ecoworld_cause_standard_view .ecoworld_cause_content { float:left; width:60%; display: inline-block; text-align: left; padding:0 15px 0 35px; }
+.ecoworld_cause_standard_view .ecoworld_cause_whitebox_border { display: none; }
+.ecoworld_cause_standard_view .ecoworld_cause_whitebox { margin:0 0 25px 0; }
+.ecoworld_cause_standard_view .ecoworld_cause_standard_title h4 a { font-size: 22px; } 
+.ecoworld_site_content .ecoworld_cause_standard_view .ecoworld_cause_standard_title h4 { line-height:27px; margin:10px 0 25px 0; }
+.ecoworld_cause_standard_view .ecoworld_cause_title h4,.ecoworld_causes_grid .ecoworld_cause_standard_title h4 { display: none; }
+.ecoworld_cause_standard_view .ecoworld_cause_donate_button a.button { font-size: 100%; }
+.ecoworld_cause_standard_view .ecoworld_causes_box { margin-bottom: 50px; }
+
+
+/*12. 1 Cause Single Page ---------------------------------------------- */
+
+.single .ecoworld_cause_text { padding:0 17px; text-align: left; } 
+.single .ecoworld_causes_box { margin-bottom:0; }
+.single .ecoworld_cause_bar_block { height: 7px; }
+
+.single .ecoworld_cause_whitebox_border { margin-top:-65px; height:65px; } 
+.single .ecoworld_cause_whitebox { margin-top:-45px; padding:0; margin-bottom: 40px; }
+.single .ecoworld_cause_whitebox ul { padding:20px 30px; text-align: left; margin:0; }
+.single .ecoworld_cause_whitebox ul:after { clear:both; content:''; display: block; }
+.single .ecoworld_cause_whitebox ul li span { font-size: 100%; display: block; padding:2px 0; }
+.single .ecoworld_cause_whitebox ul li span.ecoworld_cause_whitebox_amount { font-size:130%; }
+.single .ecoworld_cause_whitebox ul li { list-style: none; float:left; display: inline-block; margin:0 20px; position: relative; }
+.single .ecoworld_cause_whitebox ul li:first-child { margin-left:0; }
+.single .ecoworld_cause_whitebox ul li:after { content:''; display: block; position: absolute; right:0; top:50%; width:2px; height:36px; margin-top: -18px; background:#e6e6e6; margin-right: -20px; }
+.single .ecoworld_cause_whitebox ul li:last-child:after { display: none; }
+
+.single .ecoworld_cause_bar { padding:0; margin-bottom:-7px;  }
+.single .ecoworld_cause_donate_button { margin:28px 30px 28px 0; }
+.single .ecoworld_cause_donate_button a { font-size: 105%; }
+
+.single .ecoworld_cause_single_no_featured_img .ecoworld_cause_whitebox { margin:10px 10px 40px 10px; }
+.single .ecoworld_cause_single_no_featured_img .ecoworld_cause_whitebox_border { display: none; }
+
+.ecoworld_cause_single_sm_icons .ecoworld_post_share_links { float:none; }
+.ecoworld_cause_single_sm_icons { border-top:1px solid #e6e6e6; display: block; padding:20px 20px 10px; background:rgba(0,0,0,0.03);  }
+
+/* ---------------------------------------------- 
+ 	13. Portfolio Pages
+---------------------------------------------- */
+
+.ecoworld_portfolio { overflow: visible; position: relative; padding-bottom: 25px; }
+.ecoworld_portfolio.ecoworld_row { margin:0 -12px; }
+.ecoworld_portfolio.ecoworld_row .ecoworld_column_gap { margin:0; padding:0 12px; }
+
+.ecoworld_portfolio_filter_menu_holder { text-align: center; }
+
+.ecoworld_portfolio_box { float:left; margin-bottom: 24px; display: block; clear:none; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; text-align: center;}
+
+.ecoworld_portfolio_content { padding:20px 20px 0 20px; background:rgba(0,0,0,0.03); }
+.ecoworld_portfolio_content:hover .ecoworld_portfolio_img_hovericon { opacity: 0.9; top:50%; }
+
+.ecoworld_portfolio_box a img { width:100%; height:auto; display:block; line-height: 0; font-size: 0;  overflow: hidden; opacity: 1; }
+.ecoworld_portfolio_box .ecoworld_portfolio_thumb_img { position: relative; z-index:1; overflow: hidden; margin-bottom: 20px; }
+
+.ecoworld_pf_no_bg.ecoworld_portfolio_box a img,.ecoworld_pf_titles.ecoworld_portfolio_box a img { }
+
+.ecoworld_portfolio_text { clear:both; overflow: hidden; overflow: hidden; margin-top: 2px; position: relative; }
+.ecoworld_portfolio_text span.ecoworld_portfolio_title,.ecoworld_portfolio_text span.ecoworld_portfolio_title a { font-weight: bold; }
+
+.ecoworld_portfolio_title_section { float: left; width:100%;  }
+.ecoworld_portfolio_title_section span { display: block; clear: both; }
+
+.ecoworld_portfolio_title { display: block; width:100%; position: relative; overflow: hidden; margin-top: -13px; }
+.ecoworld_portfolio_title span.ecoworld_pf_only_title { font-weight: bold; padding:15px 0 20px 0; display: inline-block; }
+span.ecoworld_pf_only_title,span.ecoworld_pf_only_title a { color:#202020; font-size: 18px; line-height: 27px; }
+
+.ecoworld_pf_has_noexcerpt .ecoworld_portfolio_title { margin-top: -17px; }
+
+.ecoworld_portfolio_text span.ecoworld_portfolio_subtexts { margin:-10px 0 20px; display: block; clear: both; }
+
+.ecoworld_portfolio > ul > li { display:inline-block; padding:0; margin:0; background: none; float: left; }
+
+.ecoworld_portfolio_img_hovericon { left:50%; top:0; margin-top: -25px; margin-left: -25px; width:50px; height:50px; border-radius: 50%; line-height: 50px; position: absolute; z-index: 100; text-align: center; opacity: 0;  display: block;  }
+
+.ecoworld_pf_readmore_button { display: block; clear:both; text-align: center; margin:5px 0 35px; }
+.ecoworld_pf_readmore_button a { text-decoration: none; width:auto; display: inline-block; height:40px; line-height: 40px; padding:0 30px; border-radius: 30px; font-weight: bold; font-size: 90%; }
+
+
+
+/* 13.1 Horizontal Menu ---------------------------------------------- */
+
+.ecoworld_filter_menu_wrap { text-align: center; margin:0 auto; }
+
+.ecoworld_filter_menu,
+ul.ecoworld_h_menu {display:inline-block; margin:0 auto 24px; padding:0; text-align: center; list-style: none; }
+
+.ecoworld_site_content .ecoworld_filter_menu a, 
+.ecoworld_site_content ul.events_h_menu li a,
+ul.ecoworld_h_menu li a { display: inline-block; float:none;  line-height: 25px; padding:0; margin:0 11px 11px 11px; font-weight: bold; text-transform: uppercase; text-decoration: none; font-size: 90%; position: relative; }
+
+a.ecoworld-active-sort:after,
+ul.ecoworld_h_menu li.ecoworld_m_active a:after { content:''; position: absolute; left:0; bottom:-5px; display: block; width:100%; height:2px; background:#ccc; }
+
+.ecoworld_horizontal_menu { text-align: center; }
+
+/*.ecoworld_site_content ul.events_h_menu li a,
+ul.ecoworld_h_menu li a { margin:0; }*/
+
+.ecoworld_site_content ul.events_h_menu li,
+ul.ecoworld_h_menu li { display: inline-block; padding:0; margin:0 2px 2px 0; list-style: none; float:none; }
+
+/* ---------------------------------------------- 
+ 	14. Testimonials
+---------------------------------------------- */
+
+.ecoworld_testimonials .ecoworld_column { margin:0; position: relative; display: block; }
+.ecoworld_testimonials_pg_section { padding-top:10px; }
+.ecoworld-testimonials-slider-two.ecoworld_testimonials { margin:0; }
+
+.ecoworld_testimonials_style_one .ecoworld_testimonials_box { display: block; position: relative; margin-bottom: 40px;  padding-right: 6px; }
+.ecoworld_testimonials_style_one .ecoworld_testimonials_content { border:2px solid rgba(0,0,0,0.07); padding:25px 30px; position: relative; }
+.ecoworld_testimonials_style_one .ecoworld_testimonials_content p { font-size: 1.17em; line-height: 1.9em; margin:0 0 5px 0; }
+
+.ecoworld_testimonials_style_one .ecoworld_testimonials_quote { position: absolute; right:30px; top:30px; font-size: 30px; width:20px; text-align: right; opacity:0.1 }
+
+.ecoworld_testimonials_style_one .ecoworld_testimonials_top { display: block; padding:18px 20px; border:2px solid rgba(0,0,0,0.07); border-bottom:0; position: relative; }
+
+.ecoworld_testimonials_client_img a { display: block; width:50px; height:50px;}
+.ecoworld_testimonials_style_one .ecoworld_testimonials_client_img,.ecoworld_testimonials_style_two .ecoworld_testimonials_client_img { z-index:2; position: relative; float:left; width:50px; height:50px; display:block; margin-right:15px; border-radius: 50%; }
+.ecoworld_testimonials_style_one .ecoworld_testimonials_client_img img,.ecoworld_testimonials_style_two .ecoworld_testimonials_client_img img { width:50px; height:50px; border-radius:50%; display: block; }
+
+.ecoworld_testimonials_style_one .ecoworld_testimonials_name_details span,.ecoworld_testimonials_style_two .ecoworld_testimonials_name_details span { z-index:1; display:block; padding:0; line-height:25px; }
+.ecoworld_testimonials_style_one .ecoworld_testimonials_name,.ecoworld_testimonials_style_two .ecoworld_testimonials_name { font-weight: bold; font-size:105%; }
+
+
+.ecoworld_testimonials_style_two .ecoworld_testimonials_box { display: block; position: relative; margin-bottom: 40px;  padding-right: 6px; }
+
+.ecoworld_testimonials_style_two .ecoworld_testimonials_content { background:rgba(0,0,0,0.05); display: block; padding:25px 40px 25px 30px; position: relative; margin-bottom:32px; }
+.ecoworld_testimonials_style_two .ecoworld_testimonials_quote { position: absolute; right:25px; bottom:25px; font-size: 15px; width:20px; height:20px; text-align: right; }
+
+.ecoworld_testimonials_style_two .ecoworld_testimonials_details { opacity: 0.8; }
+
+.ecoworld_testimonials_style_two .ecoworld_testimonials_content:after {width: 0; height: 0; border-top: 25px solid rgba(0,0,0,0.05); border-right: 25px solid transparent; content:''; position: absolute; left:50px; bottom:-25px; background:transparent; }
+
+.ecoworld_testimonials_bottom { padding-left:25px; }
+
+
+/* ---------------------------------------------- 
+ 	15. Blank Page
+---------------------------------------------- */
+
+body.ecoworld_stickyOn.page-template-blank .ecoworld_containers_holder { margin-top: 0; }
+body.page-template-blank {display: table; height: 100%; width: 100%; position: absolute; margin: 0; left: 0; right: 0; top: 0; overflow-x: hidden; clear:both; }
+.blank_pg_wrap { display: table-cell; float:none; vertical-align: middle; overflow: visible; width:100%; max-width: none; }
+.blank_pg_holder > .vc_row { margin:0; }
+
+/* ---------------------------------------------- 
+ 	16. WordPress Default Widgets Styles
+---------------------------------------------- */
+
+.sidebar select { width:100%; margin:0; padding:10px 12px; background:url('../images/select.png') no-repeat right 11px; line-height: normal; }
+
+.archives-link ul li ul li:first-child { border:0;  }
+.sidebar .textwidget > p > img { margin-top: 5px; }
+.sidebar form { margin-bottom: 0; }
+.sidebar label { margin-bottom: 10px; font-size: 100%; }
+
+.ecoworld_widget_box ul.menu li a i { padding-right: 7px; }
+
+/* 16.1 RSS ---------------------------------------------- */
+
+a.rsswidget {font-weight: bold;}
+span.rss-date {font-size: 80%;}
+
+/* 16.2 Text ---------------------------------------------- */
+
+.sidebar .textwidget p {  }
+.sidebar .adwrap{ padding:15px 24px 15px 24px;}
+
+/* 16.3 Tag Colud ---------------------------------------------- */
+
+.sidebar .tagcloud { margin:0;}
+.tagcloud a { padding:8px 14px;line-height: 17px; float:left; text-decoration: none;margin:0 5px 5px 0;display:inline-block;width:auto;background:none; }
+
+/* 16.4 Calendar Widget ---------------------------------------------- */
+
+#calendar_wrap { width:100%; }
+#wp-calendar { margin:0; font-size: 100%;}
+.widget_calendar {float: left; width:100%;  }
+#wp-calendar { width: 100% }
+table#wp-calendar { border:none; }
+#wp-calendar caption { text-align: center; font-size: 110%; margin: 0; font-weight: bold; border-bottom:0; padding:5px 0;  }
+#wp-calendar thead { font-size: 90%; }
+table#wp-calendar thead th,#wp-calendar thead th { padding:3px 6px; text-align: center; }
+table#wp-calendar tbody td,#wp-calendar tbody td { text-align: center; padding:3px 6px; }
+#wp-calendar tbody td a { font-weight:bold; }
+#wp-calendar tbody .pad { background: none; }
+#wp-calendar tfoot #next { font-size: 100%; text-transform: uppercase; text-align: right; vertical-align: baseline; }
+#wp-calendar tfoot #prev { font-size: 100%; text-transform: uppercase; padding-top: 10px; }	
+#wp-calendar tfoot tr td { border-left:0; border-right:0; border-bottom:0; padding:0; vertical-align: baseline;  }
+
+/* 16.5 Search Widget ---------------------------------------------- */
+
+.widget_search form { margin:0; }
+.widget_search #ecoworld_search_form { margin:0; clear:both; display: block; position: relative; }
+.widget_search #ecoworld_search_form  .screen-reader-text { display:block;  }
+.widget_search #ecoworld_search_form input[type="text"] { margin:0; width:100%; padding:7px 7px 7px 12px; position: relative;  }
+
+.widget_search #ecoworld_search_form  #s { width:100%; outline:0; height:40px; background: transparent; border-radius: 3px; padding-left: 15px; }
+.widget_search #ecoworld_search_form button.ecoworld_search_button {  background:none; width: 40px; line-height: 40px;	font-family: FontAwesome !important; font-size:90%; border:0;  height:38px; position: absolute; right:0; text-align: center;margin-top: 1px; box-shadow: none; text-shadow:none; padding:0; position: absolute; right:0; top:0; }
+
+/* 16.6 Recent Comments ---------------------------------------------- */
+
+#content .sidebar .wp-caption p  { margin:0; }
+
+/* 16.7 Captions ---------------------------------------------- */
+
+.wp-caption { border:0; display:block; text-align:center;	margin-bottom: 15px;  max-width: 100%; clear:both; }	
+.wp-caption img { padding:0; margin:0; }
+.wp-caption p { padding:0 10px; margin:0; font-style: italic; }
+p.wp-caption-text { margin:0; padding:10px; }
+.sidebar .textwidget img { display:block; }
+.sidebar .textwidget p.wp-caption-text img { display:inline-block; }
+.sidebar .wp-caption  { border:0; display:block; margin-bottom: 15px; }
+.widget ul li span.post-date,.sidebar ul li span.post-date { font-size: 80%; }
+.widget ul li span.post-date:before,.sidebar ul li span.post-date:before { content:"- "; }
+.sticky {}
+.gallery-caption {}
+.bypostauthor {}
+.alignright { float:right; }
+.alignleft { float:left; }

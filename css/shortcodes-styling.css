@@ -1,0 +1,70 @@
+
+/*
+
+[Table of contents]
+
+1. Portfolio
+2. Other Elements
+3. Widgets
+
+*/
+
+/* ---------------------------------------------- 
+ 	1. Portfolio
+---------------------------------------------- */
+
+.swmsc_portfolio_text span.swmsc_portfolio_subtexts { color:#606060; }
+.swmsc_portfolio_img_hovericon { background:rgba(255,255,255,0.9); color:rgba(0,0,0,0.7); }
+
+/* ---------------------------------------------- 
+ 	2. Other Elements
+---------------------------------------------- */
+
+.steps_with_circle ol {  text-shadow: 0 1px 0 #fff; }
+.steps_with_circle ol li span { background: url(../images/ordered_list_bg.png) no-repeat; color:#a4a4a4; }
+.steps_with_box ol{  padding: 0 0 0 35px;}
+.steps_with_box ol{background: #fff; border: 1px solid #dedede; background: url(../images/orderedlist_bg.jpg) repeat-y;} 
+.steps_with_box ol li{border-top: 1px solid #fff; border-bottom: 1px solid #dedede; border-left: 1px solid #fff; background: #f4f4f4; text-shadow:0 1px 0 #fff;} 
+.steps_with_box ol li:hover { background: #eee; }
+
+.swmsc_recent_posts_square_date a,.swmsc_recent_posts_square_date a:hover {  background: #ededed; color:#666; }
+.swmsc_recent_posts_square_posts ul li .swmsc_recent_posts_square_grid_date a,
+.swmsc_recent_posts_square_posts ul li .swmsc_recent_posts_square_grid_date i { color:#555; opacity: 0.8; }
+.swmsc_recent_posts_square_content p { margin-bottom: 0; opacity: 0.8; }
+.swmsc_recent_posts_square_date span.swmsc_recent_posts_square_d_year { background: #444; }
+.swmsc_recent_posts_square_posts ul li .swmsc_recent_posts_square_grid_date a:hover { opacity: 1; }
+
+.swmsc_promotion_box  { border:1px solid rgba(0,0,0,0.1); }
+
+.swmsc_button, a.swmsc_button, input.swmsc_button,button.swmsc_button,input.swmsc_button[type="submit"], input[type="submit"],input[type="button"],input[type="reset"],a.button,button.button { color: #fff; background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%); background: #575757; }
+
+.swmsc_pullquote_left, .swmsc_pullquote_right {border-left: 3px solid #d5d5d5; color:#181818; }
+
+.divider,.divider_two { border-color:#e1e1e1; }
+
+hr { border-top: 1px solid rgba(0,0,0,0.15); }
+
+.swmsc_horizontal_line span.swmsc_horizontal_line_icon i { background: #fff; color:#bbb;  }
+.swmsc_line span { background: #ececec; }
+.swmsc_horizontal_menu li a { background: #fff; border:1px solid rgba(0,0,0,0.1); }
+.swmsc_horizontal_menu li a:hover { background: #f1f1f1; color:#000; }
+
+.swmsc_dropcap { background: #fff; border: 1px solid #ececec; }
+
+ul.swmsc_post_share_icons_list li { background:transparent; border:1px solid rgba(0,0,0,0.15); }
+ul.swmsc_post_share_icons_list li a { color:#888; }
+ul.swmsc_post_share_icons_list li a:hover { color:#fff; border-color:rgba(0,0,0,0.05); }
+ul.swmsc_post_share_icons_list li.s_twitter:hover { background: #12c4f7; }
+ul.swmsc_post_share_icons_list li.s_facebook:hover { background: #3984bd; }
+ul.swmsc_post_share_icons_list li.s_google:hover { background: #e65f3d; }
+ul.swmsc_post_share_icons_list li.s_pinterest:hover { background: #cd2127; }
+ul.swmsc_post_share_icons_list li.s_linkedin:hover { background: #0097bf; }
+ul.swmsc_post_share_icons_list li.s_tumblr:hover { background: #e55e42; }
+
+/* ---------------------------------------------- 
+ 	3. Widgets
+---------------------------------------------- */
+
+a.swmsc_recent_posts_tiny_icon i { color:#777; }
+a.swmsc_recent_posts_tiny_icon { color:#ddd; background: #ededed; }
+.swmsc_recent_posts_tiny ul li a.swmsc_recent_posts_tiny_icon { color:#bbb; }

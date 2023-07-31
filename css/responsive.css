@@ -1,0 +1,197 @@
+/*
+
+[Table of contents]
+
+	1. Mobile Portrait to Tablet Portrait 
+	2. Standard Screen  
+	3. Tablet Portrait 
+	4. Mobile 
+
+*/
+
+/* ---------------------------------------------- 
+ 	1. Mobile Portrait to Tablet Portrait
+---------------------------------------------- */
+
+@media only screen and (max-width: 979px) { 
+
+	.ecoworld_row .ecoworld_column3,
+	.ecoworld_row .ecoworld_column4,
+	.ecoworld_row .ecoworld_column5,
+	.ecoworld_row .ecoworld_column6 { width: 50%; }
+
+	.ecoworld_two_third,
+	.ecoworld_three_fourth,
+	.ecoworld_four_fifth,
+	.ecoworld_five_sixth,
+	.ecoworld_one_third,
+	.ecoworld_one_fourth,
+	.ecoworld_one_fifth,
+	.ecoworld_one_sixth { width:48.71794871794872%; }
+
+	.ecoworld_one_full,
+	.ecoworld_custom_two_third,
+
+	#sidebar { width: 100%; float:none; clear:both; margin-left:0; margin-bottom: 30px; }
+
+	.ecoworld_topbar .ecoworld_container { display: table; }
+	.ecoworld_topbar_left,.ecoworld_topbar_content { display: table-cell; vertical-align: middle; height:100%; float:none; padding:10px; }
+	.ecoworld_topbar_content > .right, .ecoworld_topbar_content > .left { float:left; display: block; clear:both; }
+	.ecoworld_topbar_content ul li { padding:0; }
+	.ecoworld_header_search_icon { float:left; margin-left: 25px; }
+
+    .gallery-columns-5 dl.gallery-item, .gallery-columns-6 dl.gallery-item, .gallery-columns-7 dl.gallery-item, .gallery-columns-8 dl.gallery-item, .gallery-columns-9 dl.gallery-item { width:33.29%; padding:1.5%;  }
+
+	.footer .ecoworld_small_footer ul.ecoworld_small_footer_sm_icons { padding-left:25px; }
+    .footer .ecoworld_small_footer ul.ecoworld_small_footer_sm_icons li,.footer .ecoworld_small_footer ul.ecoworld_small_footer_sm_icons li a { border:0; width:auto; margin-right: 7px; }
+    #ecoworld_go_top_scroll_btn { width:auto; padding:0 20px 0 0; border:0; }
+
+
+}
+
+
+
+
+/* ---------------------------------------------- 
+ 	2. Standard Screen
+---------------------------------------------- */
+
+
+@media only screen and (min-width: 980px) and (max-width:1150px) {
+.single .ecoworld_cause_whitebox ul { padding:15px 20px; }
+.single .ecoworld_cause_whitebox ul li span.ecoworld_cause_whitebox_amount { font-size:120%; }
+.single .ecoworld_cause_whitebox ul li { margin:0 15px; }
+.single .ecoworld_cause_whitebox ul li:after { margin-right: -15px; }
+.single .ecoworld_cause_bar { padding:0; margin-bottom:-7px;  }
+.single .ecoworld_cause_donate_button { margin:22px 20px 22px 0; }
+.single .ecoworld_cause_donate_button a.button { font-size: 100%; padding:0 25px; }
+
+}
+
+
+@media only screen and (min-width: 980px) and (max-width:1100px) {
+
+	.ecoworld_class_top_meta .ecoworld_class_price { font-size: 100%; }
+
+}
+
+/* ---------------------------------------------- 
+ 	3. Tablet Portrait
+---------------------------------------------- */
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+
+	#ecoworld_Header.ecoworld_smaller_menu #ecoworld_mobi_nav { top:50%; margin-top: -20px;  }
+
+	.ecoworld_column3.ecoworld_universal_3col_grid { width:50%; }
+	.ecoworld_class_top_meta .ecoworld_class_price { font-size: 100%; }
+
+}
+
+/* ---------------------------------------------- 
+ 	4. Mobile
+---------------------------------------------- */
+
+@media only screen and (max-width: 767px) {  
+
+	.ecoworld_two_third, .ecoworld_three_fourth, .ecoworld_four_fifth, .ecoworld_five_sixth, .one_half, .ecoworld_one_half, .ecoworld_row .ecoworld_column2, .one_third, .ecoworld_one_third, .ecoworld_row .ecoworld_column3, .one_fourth, .ecoworld_one_fourth, .ecoworld_row .ecoworld_column4, .one_fifth, .ecoworld_one_fifth, .ecoworld_row .ecoworld_column5, .one_sixth, .ecoworld_one_sixth, .ecoworld_row .ecoworld_column6, .ecoworld-layout-sidebar-left .ecoworld_row .ecoworld_column2, .ecoworld-layout-sidebar-left .ecoworld_row .ecoworld_column3, .ecoworld-layout-sidebar-left .ecoworld_row .ecoworld_column4, .ecoworld-layout-sidebar-right .ecoworld_row .ecoworld_column2, .ecoworld-layout-sidebar-right .ecoworld_row .ecoworld_column3, .ecoworld-layout-sidebar-right .ecoworld_row .ecoworld_column4 { width:100%; float:none; clear:both; margin-left:0; margin-bottom: 30px; }
+
+	.ecoworld_topbar .ecoworld_container { display: block; width:100%; text-align: center; }
+	.ecoworld_topbar_left,.ecoworld_topbar_content { display: block; width:100%; text-align: center; }
+	.ecoworld_topbar_content > .right, .ecoworld_topbar_content > .left { float:none; }
+	.ecoworld_topbar ul { float:none; }
+
+	.ecoworld_header { position: relative; }
+	.ecoworld_logo_menu_holder .ecoworld_container { width:100%; }
+	.ecoworld_logo { display: block; float:none; width:100%; text-align: center; padding:0; margin:0; }
+	.ecoworld_logo_img { border-bottom:1px solid #e6e6e6; }
+	ul.ecoworld_top_nav { border:0; }
+
+	.ecoworld_main_nav { display: inline-block; float:left; padding:15px 15px 0 15px; }
+	.ecoworld_header_search_icon { margin:0; line-height:30px; }
+	.ecoworld_overlay_search_box .ecoworld_overlay_search_box .ecoworld_search_form { font-size: 20px; }
+	form#ecoworld_search_form { margin-bottom: 0; }
+	
+	.ecoworld_topbar_content ul.ecoworld_topbar_socials,.ecoworld_topbar_content ul.ecoworld_topbar_socials li { float:none; margin:0 3px 6px 3px; }
+	.ecoworld_topbar_content ul.ecoworld_topbar_socials { margin-top:5px; }
+
+	#ecoworld_mobi_nav { width:auto; float:right; display: block; position: relative; top:0; right:20px; margin:0; padding:15px; }
+	#ecoworld_mobi_nav #ecoworld_mobi_nav_btn { width:33px; height:33px; line-height: 34px; font-size: 14px; }
+	#ecoworld_mobi_nav > ul { top:48px; right:15px; }
+
+	.ecoworld_logo_menu_holder { height:auto; }
+	.ecoworld_logo_img a { padding-top: 10px; padding-bottom: 10px; display: inline-block; }
+	
+	.ecoworld_search_container.right { float:none; }
+
+	.ecoworld_post_title_meta { margin:0 0 30px 0; }
+	ul.ecoworld_post_share_icons_list { display: block; }
+
+	#ecoworld_sub_header .ecoworld_sub_header_title,#ecoworld_sub_header h1.ecoworld_sub_header_title { font-size: 30px; }
+
+	.ecoworld_post_image span.ecoworld_pf_icon_box { display: none; }
+
+	.ecoworld_next_prev_box { width:100%; display: block; clear:both; float:none; }
+	.ecoworld_pp_view_all { display: none; }
+	.ecoworld_pp_next { border-top:2px solid #e6e6e6; margin-top: 20px; padding-top: 20px; }
+
+	.ecoworld_post_share_links { float:none; clear:both; padding-top: 20px; text-align: left;  }
+
+	.ecoworld_related_posts ul li { display: block; float:none; width:100%; margin-bottom: 40px; }
+
+	#comment-wrap ol.commentlist li ul.children { padding-left:0; }
+	#comment-wrap ol.commentlist li ul { margin-left: 0; }
+
+	#commentform p.comment-form-author, #commentform p.comment-form-email, #commentform p.comment-form-url { width:100%; }
+	form.ecoworld_search_form input[type="text"] { width:80%; }
+
+	.ecoworld_tile_gallery ul li { width:50%; }
+
+	.ecoworld_search_featured_img { display: none; }
+
+	.gallery-columns-2 dl.gallery-item, .gallery-columns-3 dl.gallery-item, .gallery-columns-4 dl.gallery-item,.gallery-columns-5 dl.gallery-item, .gallery-columns-6 dl.gallery-item, .gallery-columns-7 dl.gallery-item, .gallery-columns-8 dl.gallery-item, .gallery-columns-9 dl.gallery-item { width:50%; padding:1.5%; }
+
+	.footer .ecoworld_row { margin:0; }
+	.footer .ecoworld_column_gap { padding:0; }
+
+	.footer .ecoworld_small_footer ul.ecoworld_small_footer_sm_icons { padding:20px 0; display: block; text-align: center; margin:0; }
+    .footer .ecoworld_small_footer ul.ecoworld_small_footer_sm_icons li,.footer .ecoworld_small_footer ul.ecoworld_small_footer_sm_icons li a { margin:0 5px; line-height: 30px; height:30px; float:none; }
+    #ecoworld_go_top_scroll_btn { width:auto; padding:0 10px; border:0; float:none; display:block; text-align: center; margin:0 auto; line-height: 20px; height:20px; }
+
+	.ecoworld_footer_copyright.right,.ecoworld_small_footer_sm_icons.left { float:none; display: block; text-align: center; margin:10px 0; width:100%; }
+    .footer .ecoworld_footer_copyright { height:auto; }
+	.footer .ecoworld_footer_copyright p { padding:0; }
+	
+	.ecoworld_cause_whitebox_border { display: none; }
+	.ecoworld_cause_whitebox { margin:0 0 30px;}
+	.single .ecoworld_cause_donate_button a.button { font-size: 100%; padding:0 25px; }
+	.single .ecoworld_cause_whitebox ul { padding:15px 20px; }
+	.single .ecoworld_cause_whitebox ul li { margin:0 10px; }
+	.single .ecoworld_cause_whitebox ul li:after { display: none; }
+	.single .ecoworld_cause_whitebox ul li span { font-size: 90%; }
+	.single .ecoworld_cause_whitebox ul li span.ecoworld_cause_whitebox_amount { font-size:100%; }	
+	.single .ecoworld_cause_donate_button { margin:22px 20px 15px 0; }
+	.single .ecoworld_cause_donate_button a.button { font-size: 90%; padding:0 20px; line-height: 30px; height:30px; }
+	.ecoworld_cause_standard_view .ecoworld_cause_standard_title h4 a { font-size: 18px; } 
+
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+	.ecoworld_logo_img img { max-width:240px; }
+	#ecoworld_sub_header .ecoworld_sub_header_title,#ecoworld_sub_header h1.ecoworld_sub_header_title { font-size: 24px; }
+	.ecoworld_about_author img { float:none; display: block; margin-bottom: 20px; }
+
+	.gallery-columns-2 dl.gallery-item, .gallery-columns-3 dl.gallery-item, .gallery-columns-4 dl.gallery-item,.gallery-columns-5 dl.gallery-item, .gallery-columns-6 dl.gallery-item, .gallery-columns-7 dl.gallery-item, .gallery-columns-8 dl.gallery-item, .gallery-columns-9 dl.gallery-item { width:100%; padding:0; margin-bottom: 2%; }
+
+	.single .ecoworld_cause_whitebox ul { display: block; width:100%; }
+	.single .ecoworld_cause_whitebox ul li { display: block; text-align: center; float:none; margin:0; padding:0; }	
+	.single .ecoworld_cause_whitebox ul li span { display: inline-block; margin:0 3px; }
+	.single .ecoworld_cause_whitebox .right,.single .ecoworld_cause_whitebox .left { float:none; display: block; text-align: center; }
+	.single .ecoworld_cause_donate_button { margin:0 0 25px 0; }
+	.ecoworld_cause_standard_view .ecoworld_cause_img { float:none;width:100%; }
+	.ecoworld_cause_standard_view .ecoworld_cause_content { float:none;width:100%; margin-top: 20px; padding:0 10px; }
+
+}

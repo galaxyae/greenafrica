@@ -1,0 +1,22 @@
+/*
+Theme Name:     Eco World Child Theme
+Theme URI:      http://themeforest.net/user/Softwebmedia/portfolio
+Description:    Eco World child theme for customization
+Author:         Soft Web Media
+Author URI:     http://themeforest.net/user/Softwebmedia
+Template:       eco-world                       
+Version: 		1.00
+*/
+
+
+/* Add your custom style below */
+
+
+body.page-id-543 {background-color:#90be54;background-image:url(../images/bodybg1.jpg);background-position:center top;background-repeat:repeat;background-attachment:fixed;background-size:cover;}
+
+.page-id-543.ecoworld_l_boxed .ecoworld_main_container { max-width:1180px; width:90%; }
+.page-id-543.ecoworld_l_boxed.ecoworld_stickyOn .ecoworld_logo_menu_header,
+.page-id-543.ecoworld_l_boxed #ecoworld_Header.sticky-on { max-width:1180px; }
+
+body.page-id-525 .ecoworld_post_title h2,body.page-id-525 .ecoworld_post_title h2 a { font-size: 18px; line-height:1.7em; text-transform: none; }
+.ecoworld_l_boxed #ecoworld_Header.sticky-on { width:90%;  }
